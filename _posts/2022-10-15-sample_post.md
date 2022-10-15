@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: default
 title: Testing post
 ---
 # I am a testing post

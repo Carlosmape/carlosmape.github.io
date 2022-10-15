@@ -1,0 +1,10 @@
+
+<h3>Posts</h3>
+<hr>
+<div class="posts">
+	<ul>
+		{% for post in site.posts %}
+		<a href="{{ post.url }}" class="btn">{{ post.title }} {{ post.date }}</a>
+		{% endfor %}
+	</ul>
+</div>

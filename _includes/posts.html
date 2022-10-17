@@ -4,7 +4,15 @@
 <div class="posts">
 	<ul>
 		{% for post in site.posts %}
-		<a href="{{ post.url }}" class="btn">{{ post.title }} {{ post.date }}</a>
+		<a href="{{ post.url }}" class="btn">{{ post.title }} {{ post.date.year }} {{ post.tags.join(" ") }}</a>
 		{% endfor %}
 	</ul>
+	{% for tag in site.tags %}
+	<h4>{{ tag[0] }}</h4>
+	<ul>
+		{% for post in tag[1] %}
+		<a href="{{ post.url }}" class="btn">{{ post.title }} {{ post.date.strftime("%Y-%m-%d") }}</a>
+		{% endfor %}
+	</ul>
+	{% endfor %}
 </div>

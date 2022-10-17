@@ -7,15 +7,15 @@
 }
 
 .posts .btn{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.4);
-    border-color: rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.4);
+	border-color: rgba(0, 0, 0, 0.4);
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0.3rem;
 	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 	&:hover{
-    	background-color: rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0.1);
 	}
 }
 
@@ -29,7 +29,39 @@
 	width: 100%;
 	overflow: auto;
 }
+
 .dropdown:hover .dropdown-content {
 	display: block;
 }
 
+.circular--landscape {
+	display: inline-block; 
+	position: relative; 
+	width: 250px; 
+	height: 250px; 
+	overflow: hidden; 
+}
+
+.circular--landscape img { 
+	width: auto; 
+	height: 100%; 
+	margin-left: -50px; 
+}
+
+.circular--portrait { 
+	position: relative; 
+	width: 250px; 
+	height: 250px; 
+	overflow: hidden; 
+} 
+
+.circular--portrait img { 
+	width: 100%; 
+	height: auto; 
+}
+
+.circular--landscape, .circular--square, .circular--portrait {
+	border-radius: 50%;
+	box-shadow: 0px 3px 10px;
+	margin: auto;
+}

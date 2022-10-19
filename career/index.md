@@ -26,7 +26,7 @@ My second project in the company was [SENDA](https://www.gmv.com/en-es/products/
 
 ##  InfoGestión (business management software):
 ### C++ Software Engineer
-This was my very first work experience. Just recently finished my Informatics Degree, I was lookng for a little company, to learn the basics of a business and where I could develop some applications that could be used by someone. Then I joined to [nfogestión SLU](https://www.infogestionslu.com/)
+This was my very first work experience. Just recently finished my Informatics Degree, I was lookng for a little company, to learn the basics of a business and where I could develop some applications that could be used by someone. Then I joined to [Infogestión SLU](https://www.infogestionslu.com/)
 
 In this company I worked as Full Stack Software Engineer learning all the software product lyfe-cycle. As a [SAGE's](https://www.sage.com/) partner I mainly development of some SAGE 50 plugins (C# .NET Framework and SQL Server DDBB) adjusting to the needs of our costumers. 
 

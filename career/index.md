@@ -9,7 +9,7 @@ title: Career
 ### C++ Software engineer
 I work here for an end client [SICE](https://www.sice.com/) as a Software Engineer. About what I was expecting for this role, was mainly to change the defense sector, however I was looking for keep in the sames technologies and practices I did in my last work: critical/real-time systems and low level programming.
 
-My labour in SICE is to maintain an SCADA (called [SIDERA](https://www.sice.com/en/video/sidera-general-overview)) in the firsts spteps of the software engineer life-cycle: To analyze project's requirement, design features, develop and maintaining the code and finally, deploying and configuring in to prodcution environment. I participate in multiple SIDERA's modules such as OCS (a recursive DFS algirthm to calculate energization status of railway catenary sections), SIDERA integration with external data providers/consumers etc.
+My labour in SICE is to maintain an SCADA (called [SIDERA](https://www.sice.com/en/video/sidera-general-overview)) written mostly in C++ but with some C# .NET Framework modules in the firsts spteps of the software engineer life-cycle: To analyze project's requirement, design features, develop and maintaining the code and finally, deploying and configuring in to prodcution environment. I participate in multiple SIDERA's modules such as OCS (a recursive DFS algirthm to calculate energization status of railway catenary sections), SIDERA integration with external data providers/consumers etc.
 
 Adittionally I am helping to coordinate a project. Leading with costumer meetings, coorginating back-end developments and doing documentation tasks such as System Architecture designing, tasks supervisions, Test Cases desiging and supervising compliance of the project's requirements. 
 

@@ -6,16 +6,16 @@ descrption: My work and academic career described in further detail
 
 # Experience
 
-## Rieka Talent (ITS) <span class="date">2021/Now</span>
+## SICE <span class="date">2021/Now</span>
 ### C++ Software engineer
-I work here for an end client [SICE](https://www.sice.com/) as a Software Engineer. About what I was expecting for this role, was mainly to change the defense sector, however I was looking for keep in the sames technologies and practices I did in my last work: critical/real-time systems and low level programming.
+I work for an end client [SICE](https://www.sice.com/) subcontracted from a software engineering consultancy (Rieka Recowin) as a Software Engineer. About what I was expecting for this role, was mainly to change the defense sector, however I was looking for keep in the sames technologies and practices I did in my last work: critical/real-time systems and low level programming. Kepp adquiring business Knowledge and improvin all my tech and soft skills.
 
 My labour in SICE is to maintain an SCADA (called [SIDERA](https://www.sice.com/en/video/sidera-general-overview)) written mostly in C++ but with some C# .NET Framework modules in the firsts spteps of the software engineer life-cycle: To analyze project's requirement, design features, develop and maintaining the code and finally, deploying and configuring in to prodcution environment. I participate in multiple SIDERA's modules such as OCS (a recursive DFS algirthm to calculate energization status of railway catenary sections), SIDERA integration with external data providers/consumers etc.  
 **Used technology: C++, C# .NET Framework, SQL, Python, Batch-scripting, Multi-threading, Windows Services, Visual Studio**
 
-Adittionally I am helping to coordinate a project. Leading with costumer meetings, coorginating back-end developments and doing documentation tasks such as System Architecture designing, tasks supervisions, Test Cases desiging and supervising compliance of the project's requirements. 
+Adittionally I took the role of software analyst, to help my project manager to coordinate projects, design technical solutions and facilite developers labour. In this role I took care of leading with costumer meetings, coorginating back-end developments and doing documentation tasks such as System Architecture designing, tasks supervisions, Test Cases desiging and supervising compliance of the project's requirements. 
 
-You can see related [remarkable projects](/projects/sidera) section to read in deep about my thoughts about the projects I participated in this company.
+You can see related [remarkable projects](/projects/sidera) section to read in deep about my thoughts about the projects I participated in this company and, adittionally, a use case of my proactivity and determination soft skills and another use case of my technical abilities.
 
 ## GMV (ITS, defense) <span class="date">2019/2021</span>
 ### C++ Software engineer

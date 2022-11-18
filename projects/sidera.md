@@ -91,6 +91,3 @@ The debugging process of any recursive algorithm must be carried out in a thorou
 The worse performance is the first algorithm launch, because it will walk throught entire nodes at the first time. In other hand, for subsecuently executions, some nodes will be already calculated, so the recursion deep will be much shorter than the previous executions. 
 
 The algorithm is subscribed to any node status change in the SCADA. I.e: if a Disconnector node changes it switch status, it will recalculate adjacents nodes (to check if their values shall change or not)
-
-# Thoughts
-TODO: Improvement Proposals for problems detected during the development of this project

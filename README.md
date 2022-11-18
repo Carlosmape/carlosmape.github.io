@@ -14,7 +14,7 @@ Sections to be included:
 	   Just like the repo's README
    [ ] PACA
 	   Add project explanation (reuse Degree's Final Work)
-   [ ] Cyclock
+   [X] Cyclock
        Add project explanation (reuse Diploma's Final Work)
 
  - About me (TBC name)

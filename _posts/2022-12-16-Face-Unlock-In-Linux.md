@@ -15,6 +15,10 @@ Installation instructions can be found in the github repository as well as some 
 
 In order to debug the process, Howdy could be configured to enable notifications while face-recognition succeeds (for more information take a look at the [Howdy's github repository](https://github.com/boltgolt/howdy)):
 ```
+[core]
+# Print that face detection is being attempted
+detection_notice = true
+
 # Do not print anything when a face verification succeeds
 no_confirmation = true
 ```
@@ -22,6 +26,22 @@ no_confirmation = true
 ### SlimbookFace a GUI for Howdy
 [SlimbookFace](https://github.com/Slimbook-Team/slimbookface) is a project from Slimbook community is based on [Howdy](#Howdy) is a simple GUI interface to configure it. 
 
+### Security tips
+Howdy developers suggest to do not use just Howdy as authentification method. Also, to minimize the chance of this program being compromised, it's recommended to leave Howdy in `/lib/security` and to keep it read-only.
+
+
+In addition, notice that Howdy could be configured to store either failed and sucessful attempts of recognition. These snapshots are stored in your system in `/lib/security/howdy/snapshots/` (it could be in read-only, yes, but someone could print them in high resolution and could broke your system's security!)
+
+To disable this option just edit Howdy configuration file as follows:
+```
+[snapshots]
+# Capture snapshots of failed login attempts and save them to disk with metadata
+# Snapshots are saved to the "snapshots" folder
+capture_failed = true
+
+# Do the same as the option above but for successful attempts
+capture_successful = false
+```
 
 ## Pluggable Authentication Modules - PAM
 I am not to deeply explain this concept, but it is worth to mention it, because it is needed to make Howdy works:

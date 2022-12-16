@@ -6,12 +6,12 @@ tags: ["Security", "Linux"]
 ---
 
 # Be a superuser with Face recognition in Linux
-In this post I cover an overview of face recognition system in Linux to stop user being writing their password every time it is needed.
+In this post I cover an overview of face recognition system in Linux to stop user being asked to write their password every time it is needed.
 
 ## Howdy
 [Howdy](https://github.com/boltgolt/howdy) provides authentication based on IR emitters and camera facial recognition to prove who you are.
 
-Installation instructions can be found in the github repository as well as some configurations and how to setup your own face in the system.
+Installation instructions can be found in the github repository as well as some configurations and how to setup your own face in the system. I highly recommend to use an IR Camera (if you have it, of course) as in my [Slimbook Pro X](https://slimbook.es/en/pro-x-en). These cameras are specificly recommended to biometric-recognition (and other usages like 3D scanning and so on. because they are not based on light and colour capturing methods, they capture deep of field and objects distance in 3D)
 
 In order to debug the process, Howdy could be configured to enable notifications while face-recognition succeeds (for more information take a look at the [Howdy's github repository](https://github.com/boltgolt/howdy)):
 ```
@@ -30,7 +30,7 @@ no_confirmation = true
 Howdy developers suggest to do not use just Howdy as authentification method. Also, to minimize the chance of this program being compromised, it's recommended to leave Howdy in `/lib/security` and to keep it read-only.
 
 
-In addition, notice that Howdy could be configured to store either failed and sucessful attempts of recognition. These snapshots are stored in your system in `/lib/security/howdy/snapshots/` (it could be in read-only, yes, but someone could print them in high resolution and could broke your system's security!)
+In addition, notice that Howdy could be configured to store either failed and sucessful attempts of recognition. This option just should abled for debugging purposes. These snapshots are stored in your system in `/lib/security/howdy/snapshots/` (it could be in read-only, yes, but someone could print them in high resolution and could broke your system's security!)
 
 To disable this option just edit Howdy configuration file as follows:
 ```
@@ -42,6 +42,7 @@ capture_failed = true
 # Do the same as the option above but for successful attempts
 capture_successful = false
 ```
+
 
 ## Pluggable Authentication Modules - PAM
 I am not to deeply explain this concept, but it is worth to mention it, because it is needed to make Howdy works:

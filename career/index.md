@@ -6,7 +6,7 @@ descrption: My work and academic career described in further detail
 
 # Experience
 
-## SICE <span class="date">2021/Now</span>
+## SICE (ITS) <span class="date">2021/Now</span>
 ### C++ Software engineer
 I work for an end client [SICE](https://www.sice.com/) as a **Software Engineer**. About what I was expecting for this role, was mainly to change the defense sector, however I was looking for keep in the sames technologies and practices I did in my last work: **critical/real-time systems and low level programming**. And keep adquiring business Knowledge and improvin all my tech and soft skills.
 
@@ -46,7 +46,7 @@ In the background I helped to maintain an own product, a CMMS (Computerized Main
 
 ## Android development diploma <span class="date">2018/2019</span>
 ### Universitat Politécnica de Valencia
-Adroid development diploma is a reduced course from the original Android Development Master (with almost the same college credits except for the Final Work and enterprise practices ones). I learned to use Adroid SDK, Android Studio, Firebase (including it's non-relational DDBB) and basically, how to design, develop and maintain an Android application.
+Adroid development diploma is a reduced course from the original Android Development Master (with almost the same college credits except for the Final Work and enterprise practices ones). I learned to use **Adroid SDK (Java and Kotlin), Android Studio, Firebase** (including it's non-relational DDBB) and basically, how to design, develop and maintain an Android application.
 
 I developed some sample applications but the most remarkable was the one I developed for the diploma's final workr: I worked in an IoT application that integrated an embedded system (an arduino nano with a GPRS module) with an Android app. The application provides users a secure solution to look out their bycicles by installing the IoT device in the bike's chasis and connecting to their phones. You can read this project in further detail in [Cylock](/projects/cylock) section.
 
@@ -56,7 +56,7 @@ In a brief I started the Degree excited about Systems, not in development. In th
 
 At the University I specially felt confortable with networkings and system administration, however, I learned a lot of algorithm, data structure and programming paradigms. Such as a bunch of known algorithms like optimization ones, A\*, DFS, BFS, sorting ones such as bubble-short...
 
-Some of the most used languages during the studies were **C++, Bash-scripting, Ruby, VHDL, Lisp**
+Some of the most used languages during the studies were **C/C++, Bash-scripting, Ruby, VHDL, Lisp**
 
 # Certifications and courses
 

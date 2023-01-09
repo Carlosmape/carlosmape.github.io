@@ -22,7 +22,7 @@ After about 3 month I felt comfortable with the system and adquired the confiden
 # Notable tasks and uses cases
 
 ## GENETEC SDK (best practice advocacy use case)
-One of my first task in [SICE](/career/sice-its-2021now) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in SIDERA. My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.
+One of my first task in [SICE](/career/#sice-its-2021now) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in SIDERA. My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.
 
 ### Development process
 This module of the application was very old, and may be one of the first external system integrated in SIDERA. [GENETEC](https://www.genetec.com/) is such a security software, in this case, to manage and monitorize CCTV cameras. SIDEA working as a SCADA, integrate their SDK to have the state of the cameras synchronized. GENETEC is a complex system and it can be intuited in the code. A lot of time, a bunch of people modifying, fixing (and undo)... This module includes a GENETEC SDK wrapper library written in .NET C# and a C++ service that used it and communicates with SIDERA.

@@ -15,7 +15,7 @@ These are, in my opinion, mostly remarkable projects I took part of:
 # Personal/Academic Projects
 There are some of my personal/academic projects:
 
-| Project           				| Project's Repository[⁽¹⁾](#Info)															| Technology  			|
+| Project           				| Project's Repository[⁽¹⁾](#info)															| Technology  			|
 |:----------------------------------|:------------------------------------------------------------------------------------------|:----------------------|
 | LoreEngine        				|[LoreEngine](/projects/lorengine/) *(Private repo)*										|Python					| 
 | Calendar (Ulauncher plugin) 		|[carlosmape/ulauncher-calendar](https://github.com/Carlosmape/ulauncher-calendar)			|Python, Google SDK		|

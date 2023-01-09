@@ -56,7 +56,7 @@ In a brief I started the Degree excited about Systems, not in development. In th
 
 At the University I specially felt confortable with networkings and system administration, however, I learned a lot of algorithm, data structure and programming paradigms. Such as a bunch of known algorithms like optimization ones, A\*, DFS, BFS, sorting ones such as bubble-short...
 
-Some of the most used languages during the studies were **C/C++, Bash-scripting, Ruby, VHDL, Lisp**
+:GSome of the most used languages during the studies were **C/C++, Bash-scripting, Ruby, VHDL, Lisp**
 
 # Certifications and courses
 

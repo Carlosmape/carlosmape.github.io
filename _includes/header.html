@@ -2,8 +2,8 @@
 	<h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
 	<h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 	<a href="{{ site.url }}/" class="btn">Hello World</a>
-	<a href="{{ site.url }}/career" class="btn">Career</a>
-	<a href="{{ site.url }}/projects" class="btn">Projects</a>
-	<a href="{{ site.url }}/posts" class="btn">Thoughts</a>
+	<a href="{% link career/index.md %}" class="btn">Career</a>
+	<a href="{% link projects/index.md %}" class="btn">Projects</a>
+	<a href="{% link posts.md %}" class="btn">Thoughts</a>
 </header>
 

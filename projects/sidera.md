@@ -10,7 +10,7 @@ SIDERA is an SCADA which I took part of. If you are interested to know SIDERA, h
 <iframe frameborder="0" src="//fast.wistia.net/embed/iframe/1udndnopro " style="width: 100%; height: 600px;" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" name="wistia_embed" class="wistia_embed" scrolling="no" allowtransparency="true"></iframe>
 
 ## State of the art (Context)
-SIDERA has been one of the most largest software product I had taken part of. When I started to work here was very difficult for me to understand the whole system (including the way to work in [SICE](/career/#sice-2021now) as company). It is a huge ecosystem of SW and HW infraestructure, manages from, we can say "front-end" or "client" applications, to field devices installed in tunnels, roads, railways etc. 
+SIDERA has been one of the most largest software product I had taken part of. When I started to work here was very difficult for me to understand the whole system (including the way to work in [SICE](/career/#sice-its-2021now) as company). It is a huge ecosystem of SW and HW infraestructure, manages from, we can say "front-end" or "client" applications, to field devices installed in tunnels, roads, railways etc. 
 
 More over, it count with a robust software engineer procedure: design, development, test, deployment is not the only way. In paralel, there are QA, CI, cibersecurity audits while software engineers are doing their work. But it is also, the product development is driven by so many different projects (of different nature, from tunnels to freeways) with very different requirements each other.
 
@@ -22,7 +22,7 @@ After about 3 month I felt comfortable with the system and adquired the confiden
 # Notable tasks and uses cases
 
 ## GENETEC SDK (best practice advocacy use case)
-One of my first task in [SICE](/career/#sice-2021now) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in SIDERA. My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.
+One of my first task in [SICE](/career/#sice-its-2021now) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in SIDERA. My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.
 
 ### Development process
 This module of the application was very old, and may be one of the first external system integrated in SIDERA. [GENETEC](https://www.genetec.com/) is such a security software, in this case, to manage and monitorize CCTV cameras. SIDEA working as a SCADA, integrate their SDK to have the state of the cameras synchronized. GENETEC is a complex system and it can be intuited in the code. A lot of time, a bunch of people modifying, fixing (and undo)... This module includes a GENETEC SDK wrapper library written in .NET C# and a C++ service that used it and communicates with SIDERA.

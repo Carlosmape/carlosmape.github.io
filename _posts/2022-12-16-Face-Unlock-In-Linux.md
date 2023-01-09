@@ -24,7 +24,7 @@ no_confirmation = true
 ```
 
 ### SlimbookFace a GUI for Howdy
-[SlimbookFace](https://github.com/Slimbook-Team/slimbookface) is a project from Slimbook community is based on [Howdy](#Howdy) is a simple GUI interface to configure it. 
+[SlimbookFace](https://github.com/Slimbook-Team/slimbookface) is a project from Slimbook community is based on [Howdy](#howdy) is a simple GUI interface to configure it. 
 
 ### Security tips
 Howdy developers suggest to do not use just Howdy as authentification method. Also, to minimize the chance of this program being compromised, it's recommended to leave Howdy in `/lib/security` and to keep it read-only.

@@ -15,11 +15,11 @@ These are, in my opinion, mostly remarkable projects I took part of:
 # Personal/Academic Projects
 There are some of my personal/academic projects:
 
-| Project           				| Project's Repository[⁽¹⁾](#Info)															| Technology  			|
+| Project           				| Project's Repository[⁽¹⁾](#info)															| Technology  			|
 |:----------------------------------|:------------------------------------------------------------------------------------------|:----------------------|
 | LoreEngine        				|[LoreEngine](/projects/lorengine/) *(Private repo)*										|Python					| 
 | Calendar (Ulauncher plugin) 		|[carlosmape/ulauncher-calendar](https://github.com/Carlosmape/ulauncher-calendar)			|Python, Google SDK		|
-| Cyclock    						|[Cylock](/projects/cylock)																	|Java, Android SDK 		| 
+| Cyclock    						|[Cylock](/projects/cylock/)																	|Java, Android SDK 		| 
 | Project's template (NeoVim plugin)|[carlosmape/project-templates.nvim](https://github.com/Carlosmape/project-templates.nvim)	|Vim Script, Python		|
 | CAMS (simple CMS) 				|[carlosmape/CaMS](http://github.com/carlosmape/CAMS)										|PHP, JS, HTML5, CSS3	|
 

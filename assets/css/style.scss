@@ -156,17 +156,34 @@ img.icon {
 }
 
 .typed-out,
-.typed-out-d{
+.typed-out-d,
+.centered-typed-out,
+.centered-typed-out-d{
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-	margin-left: 50%;
     animation: typing 2s steps(20, end) forwards;
 }
 .typed-out-d{
     animation: typing 2s steps(20, end) 1s forwards;
 }
+.centered-typed-out,
+.centered-typed-out-d{
+	margin-left: 50%;
+}
+.centered-typed-out{
+    animation: centered-typing 2s steps(20, end) forwards;
+}
+.centered-typed-out-d{
+    animation: centered-typing 2s steps(20, end) 1s forwards;
+}
+
 @keyframes typing {
+  from { width: 0; }
+  to {  width: 100%; }
+}
+
+@keyframes centered-typing {
   from { width: 0; margin-left: 50%; }
   to {  width: 100%; margin-left: 0%; }
 }

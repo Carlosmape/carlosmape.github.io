@@ -7,7 +7,7 @@ description: Welcome to my portfolio, know a little bit more about this Computer
 <img title="My Face" alt="My face" src="/assets/img/my_face.png">
 </div>
 
-# Hi, I'm Carlos Martín
+<h1 class="typed-out-d">Hi, I'm Carlos Martín</h1>
 **I'm a Computer Engineer**.
 I love either to develop software (focused on low-level, performance and efficiency) and all related with computing (integrating hardware devices, architectural solutions and OS management & configurations)
 

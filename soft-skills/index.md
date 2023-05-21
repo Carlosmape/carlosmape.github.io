@@ -1,7 +1,80 @@
 ---
 layout: default
-title: Test Page
+title: Soft skills
 description: No description provided
+hidden_cats:
+    - soft-skills
+    - team-work
+    - proactivity
+    - curiosity
 ---
 
-Testing empty page for soft skills
+In this section I cover my remarkable soft-skills with some use cases
+{{page.hidden_cats }}
+# Team Work
+<ul class="posts">
+    {% for post in site.categories['team-work'] %}
+    <a href="{{ post.url }}" class="btn" title="{{ post.description }}">
+    	<div class="post-date">{{ post.date | date: "%b %Y" }}</div>
+    	<div class="post-title">{{ post.title }}</div>
+    	<div class="post-cats">
+    		{% for cat in post.categories %}
+                {% if page.hidden_cats contains tag %}
+                {% else %}
+    		    	<div class="post-cat-{{ cat }}">{{ cat }}</div>
+                {% endif %}
+    		{% endfor %}
+    	</div>
+    	<div class="post-tags">
+    		{% for tag in post.tags %}
+    		    	<div class="post-tag-{{ tag }}">{{ tag }}</div>
+    		{% endfor %}
+    	</div>
+    </a>
+    {% endfor %}
+</ul>
+
+# Proactivity
+<ul class="posts">
+    {% for post in site.categories['proactivity'] %}
+     <a href="{{ post.url }}" class="btn" title="{{ post.description }}">
+    	<div class="post-date">{{ post.date | date: "%b %Y" }}</div>
+    	<div class="post-title">{{ post.title }}</div>
+    	<div class="post-cats">
+    		{% for cat in post.categories %}
+                {% if page.hidden_cats contains tag %}
+                {% else %}
+    		    	<div class="post-cat-{{ cat }}">{{ cat }}</div>
+                {% endif %}
+    		{% endfor %}
+    	</div>
+    	<div class="post-tags">
+    		{% for tag in post.tags %}
+    		    	<div class="post-tag-{{ tag }}">{{ tag }}</div>
+    		{% endfor %}
+    	</div>
+    </a>
+    {% endfor %}
+</ul>
+
+# Curiosity 
+<ul class="posts">
+    {% for post in site.categories['curiosity'] %}
+     <a href="{{ post.url }}" class="btn" title="{{ post.description }}">
+    	<div class="post-date">{{ post.date | date: "%b %Y" }}</div>
+    	<div class="post-title">{{ post.title }}</div>
+    	<div class="post-cats">
+    		{% for cat in post.categories %}
+                {% if page.hidden_cats contains tag %}
+                {% else %}
+    		    	<div class="post-cat-{{ cat }}">{{ cat }}</div>
+                {% endif %}
+    		{% endfor %}
+    	</div>
+    	<div class="post-tags">
+    		{% for tag in post.tags %}
+    		    	<div class="post-tag-{{ tag }}">{{ tag }}</div>
+    		{% endfor %}
+    	</div>
+    </a>    {% endfor %}
+</ul>

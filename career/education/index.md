@@ -1,11 +1,8 @@
 ---
 layout: default
-title: Career
-descrption: My work and academic career described in further detail
+title: Education
+description: All my actademic studies, courses and certifications
 ---
-
-# Academic
-
 ## Specialization Diploma in Android Apps Development <span class="date">2018/2019</span>
 ### Universitat Politécnica de Valencia
 Adroid development diploma is a reduced course from the original Android Development Master (with almost the same college credits except for the Final Work and enterprise practices ones). I learned to use **Adroid SDK (Java and Kotlin), Android Studio, Firebase** (including it's non-relational DDBB) and basically, how to design, develop and maintain an Android application.

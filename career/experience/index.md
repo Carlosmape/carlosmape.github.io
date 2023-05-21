@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Career
-descrption: My academic career described in further detail
+title: Experience
+description: Here you have my work experience summary
 ---
-
-# Experience
 
 ## SICE (ITS) <span class="date">2021/Now</span>
 ### C++ Software engineer

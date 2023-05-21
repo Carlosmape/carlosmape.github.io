@@ -36,15 +36,24 @@
 	}
 }
 
-.post-date, .post-tags{
+.post-date, .post-tags, .post-cats{
 	display: inline-flex;
 }
-.post-tags *{
+.post-date {
+    position: relative;
+    float: right;
+}
+.post-tags *, .post-cats *{
 	margin: 0.3rem !important;
 	padding: 0.3rem;
 	border-radius: 0.3rem;
-	background: $bg-color-cuaternary;
 	color: $header-heading-color;
+}
+.post-tags *{
+	background: $bg-color-secondary;
+}
+.post-cats *{
+	background: $bg-color-cuaternary;
 }
 
 .dropdown {
@@ -144,6 +153,19 @@ img.icon {
 
 .main-content {
 	animation: fadeIn 1s;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid $code-text-color;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1s steps(20, end) forwards;
+}
+@keyframes typing {
+  from { width: 0 }
+  99% { width: 100%}
+  to {  width: 100%; border-color: transparent }
 }
 
 span.date{

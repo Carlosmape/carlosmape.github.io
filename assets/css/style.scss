@@ -98,7 +98,7 @@
 		left: 0;
 	}
 
-
+	animation: fadeIn 1s;
 }
 .circular--landscape {
 	display: inline-block; 
@@ -160,12 +160,13 @@ img.icon {
     border-right: .15em solid $code-text-color;
     white-space: nowrap;
     width: 0;
+	margin-left: 50%;
     animation: typing 1s steps(20, end) forwards;
 }
 @keyframes typing {
-  from { width: 0 }
-  99% { width: 100%}
-  to {  width: 100%; border-color: transparent }
+  from { width: 0; margin-left: 50%; }
+  99% { width: 100%; margin-left: 0%; }
+  to {  width: 100%; margin-left: 0%; border-color: transparent }
 }
 
 span.date{

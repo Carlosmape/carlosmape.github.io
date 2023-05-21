@@ -1,6 +1,5 @@
 ---
 ---
-
 @import 'jekyll-theme-cayman';
 
 
@@ -51,18 +50,47 @@
 .dropdown {
 	display: inline-block;
 	position: relative;
+	background: none;
+	border: none;
+	padding: 0px;
+
+	button{
+		@include small {
+			margin-bottom:0px;
+		}
+	}
 }
 .dropdown-content {
 	display: none;
 	position: absolute;
-	width: 100%;
-	overflow: auto;
+	z-index: 1;
+}
+
+.dropdown:hover {
+	background: none;
+	border: none;
+}
+.dropdown:hover button {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
-}
+	display: flex;
+	left: -50%;
 
+	@include small {
+		margin-top:1em;
+		display: block;
+		width: 100%;
+		position: relative;
+		left: 0;
+	}
+
+
+}
 .circular--landscape {
 	display: inline-block; 
 	position: relative; 
@@ -96,26 +124,26 @@
 }
 
 .upper-img {
-    margin-top: -4.5rem !important;
+	margin-top: -4.5rem !important;
 }
 
 img.icon {
-    // width: 2*$icon-size;
-    width: $icon-size;
-    vertical-align: bottom;
-    fill: $header-heading-color;
-    // border: solid 1px;
-    // border-radius: 50%;
-    // padding: $icon-size/2;
+	// width: 2*$icon-size;
+	width: $icon-size;
+	vertical-align: bottom;
+	fill: $header-heading-color;
+	// border: solid 1px;
+	// border-radius: 50%;
+	// padding: $icon-size/2;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .main-content {
-  animation: fadeIn 1s;
+	animation: fadeIn 1s;
 }
 
 span.date{

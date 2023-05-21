@@ -2,8 +2,19 @@
 	<h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
 	<h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 	<a href="{{ site.url }}/" class="btn">Hello World</a>
-	<a href="{% link career/index.md %}" class="btn">Career</a>
-	<a href="{% link projects/index.md %}" class="btn">Projects</a>
-	<a href="{% link posts.md %}" class="btn">Thoughts</a>
+	<div class="dropdown btn">
+		<button class="btn">Career</button>
+		<div class="dropdown-content">
+			<a href="{% link career/education/index.md %}" class="btn">Education</a>
+			<a href="{% link career/experience/index.md %}" class="btn">Experience</a>
+		</div>
+	</div>
+	<div class="dropdown btn">
+		<button class="btn">Skills</button>
+		<div class="dropdown-content">
+			<a href="{% link hard-skills/index.md %}" class="btn">Hard</a>
+			<a href="{% link soft-skills/index.md %}" class="btn">Soft</a>
+		</div>
+	</div>
 </header>
 

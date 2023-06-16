@@ -21,7 +21,9 @@
 	}
 }
 
-.posts{}
+.posts{
+	display: flex;
+}
 
 .posts .btn{
 	text-decoration: none;

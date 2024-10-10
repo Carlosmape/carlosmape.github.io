@@ -139,13 +139,9 @@
 }
 
 img.icon {
-	// width: 2*$icon-size;
 	width: $icon-size;
 	vertical-align: bottom;
-	fill: $header-heading-color;
-	// border: solid 1px;
-	// border-radius: 50%;
-	// padding: $icon-size/2;
+    filter: invert(1);
 }
 
 @keyframes fadeIn {

@@ -333,9 +333,11 @@ a {
 }
 
 .site-footer {
-	padding-top: 2rem;
 	margin-top: 2rem;
+	padding: 1rem;
 	border-top: solid 1px $hr-border-color;
+    display: flex;
+    align-items: baseline;
 
 	@include large {
 		font-size: 1rem;
@@ -355,7 +357,7 @@ a {
 	font-weight: bold;
 }
 .site-footer-contact {
-	display: block;
+    display: inline-flex;
 	a {
     	margin: 0.5em;
 	}

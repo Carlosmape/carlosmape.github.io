@@ -1,6 +1,5 @@
 ---
 ---
-
 @import 'jekyll-theme-cayman';
 
 
@@ -22,7 +21,9 @@
 	}
 }
 
-.posts{}
+.posts{
+	display: flex;
+}
 
 .posts .btn{
 	text-decoration: none;
@@ -37,32 +38,70 @@
 	}
 }
 
-.post-date, .post-tags{
+.post-date, .post-tags, .post-cats{
 	display: inline-flex;
 }
-.post-tags *{
+.post-date {
+    position: relative;
+    float: right;
+}
+.post-tags *, .post-cats *{
 	margin: 0.3rem !important;
 	padding: 0.3rem;
 	border-radius: 0.3rem;
-	background: $bg-color-cuaternary;
 	color: $header-heading-color;
+}
+.post-tags *{
+	background: $bg-color-secondary;
+}
+.post-cats *{
+	background: $bg-color-cuaternary;
 }
 
 .dropdown {
 	display: inline-block;
 	position: relative;
+	background: none;
+	border: none;
+	padding: 0px;
+
+	button{
+		@include small {
+			margin-bottom:0px;
+		}
+	}
 }
 .dropdown-content {
 	display: none;
 	position: absolute;
-	width: 100%;
-	overflow: auto;
+	z-index: 1;
+}
+
+.dropdown:hover {
+	background: none;
+	border: none;
+}
+.dropdown:hover button {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
-}
+	display: flex;
+	left: -50%;
 
+	@include small {
+		margin-top:1em;
+		display: block;
+		width: 100%;
+		position: relative;
+		left: 0;
+	}
+
+	animation: fadeIn 1s;
+}
 .circular--landscape {
 	display: inline-block; 
 	position: relative; 
@@ -96,26 +135,55 @@
 }
 
 .upper-img {
-    margin-top: -4.5rem !important;
+	margin-top: -4.5rem !important;
 }
 
 img.icon {
-    // width: 2*$icon-size;
-    width: $icon-size;
-    vertical-align: bottom;
-    fill: $header-heading-color;
-    // border: solid 1px;
-    // border-radius: 50%;
-    // padding: $icon-size/2;
+	width: $icon-size;
+	vertical-align: bottom;
+    filter: invert(1);
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .main-content {
-  animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+.typed-out,
+.typed-out-d,
+.centered-typed-out,
+.centered-typed-out-d{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2s steps(20, end) forwards;
+}
+.typed-out-d{
+    animation: typing 2s steps(20, end) 1s forwards;
+}
+.centered-typed-out,
+.centered-typed-out-d{
+	margin-left: 50%;
+}
+.centered-typed-out{
+    animation: centered-typing 2s steps(20, end) forwards;
+}
+.centered-typed-out-d{
+    animation: centered-typing 2s steps(20, end) 1s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to {  width: 100%; }
+}
+
+@keyframes centered-typing {
+  from { width: 0; margin-left: 50%; }
+  to {  width: 100%; margin-left: 0%; }
 }
 
 span.date{

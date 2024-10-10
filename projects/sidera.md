@@ -46,8 +46,7 @@ I finally reached an agreement with all parties involved. I would merge my chang
 
 
 ## Catenary energization calculation (a recursive DFS approach to solve the problem)
-
-OSC subsystem is a windows service that is written using C++ 11 standard to take advantage of the [Smart Pointers](https://en.cppreference.com/book/intro/smart_pointers). The main goal is to real time check the satate of energization of catenary sections along the railway. Following image is a portion of the entire electrical schema to be calculated in this project:
+OSC is a windows service that is written using C++ 11 standard to take advantage of the [Smart Pointers](https://en.cppreference.com/book/intro/smart_pointers). The main goal is to real time check the satate of energization of catenary sections along the railway. Following image is a portion of the entire electrical schema to be calculated in this project:
 
 ![OSC Schema](/assets/img/SIDERA_OCS_Schema.png)
 
@@ -91,3 +90,5 @@ The debugging process of any recursive algorithm must be carried out in a thorou
 The worse performance is the first algorithm launch, because it will walk throught entire nodes at the first time. In other hand, for subsecuently executions, some nodes will be already calculated, so the recursion deep will be much shorter than the previous executions. 
 
 The algorithm is subscribed to any node status change in the SCADA. I.e: if a Disconnector node changes it switch status, it will recalculate adjacents nodes (to check if their values shall change or not)
+
+

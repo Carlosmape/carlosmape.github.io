@@ -1,0 +1,9 @@
+		<a href="{{ post.url }}" class="post-card backgrounded" title="{{ post.description }}">
+			<div class="post-title">{{ post.title }}</div>
+			<div class="post-date">{{ post.date | split: " " | first}}</div>
+			<div class="post-tags">
+				{% for tag in post.tags %}
+					<div class="post-tag-{{ tag }}">{{ tag }}</div>
+				{% endfor %}
+			</div>
+		</a>

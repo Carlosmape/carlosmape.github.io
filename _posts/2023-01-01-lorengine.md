@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: post
 title: LoreEngine
 description: My own game engine and my first Python project
+tags: ['Investigation']
+categories: ['Personal project']
 ---
 
 # Introduction

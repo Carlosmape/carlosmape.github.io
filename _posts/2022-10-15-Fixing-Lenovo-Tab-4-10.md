@@ -2,7 +2,8 @@
 layout: post
 title: Fixing broken rooted tablet
 description: Retaking an old project to degoogle an Android tablet that ends with a paperweight
-tags: ["Android"]
+tags: ["Curiosity"]
+categories: ['Personal project']
 ---
 
 # State of the art

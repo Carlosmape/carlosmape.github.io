@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: post
 title: SIDERA's Datawarehouse
 description: An use case of proactivity, self-management and continous learning
-tags: []
+tags: ['Investigation']
+categories: ['SICE', 'Professional project']
 ---
 
 # SIDERA's Datawarehouse (technology lead, research, SW analysis)

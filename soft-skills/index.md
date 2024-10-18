@@ -14,21 +14,21 @@ In this section I cover my remarkable soft-skills with some use cases
 # Team Work
 
 <div class="posts">
-    {% for post in site.categories['team-work'] %}
+    {% for post in site.tags['Team work'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>
 
 # Proactivity
 <div class="posts">
-    {% for post in site.categories['proactivity'] %}
+    {% for post in site.tags['Proactivity'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>
 
 # Continuous Learning
 <div class="posts">
-    {% for post in site.categories['continuous learning'] %}
+    {% for post in site.tags['continuous learning'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>

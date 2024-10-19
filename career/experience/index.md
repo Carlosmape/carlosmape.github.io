@@ -14,8 +14,6 @@ My labour in SICE as a **software developer** is to maintain an SCADA (called [S
 Adittionally I took the role of **software analyst** in the product's back-end, to help my project manager to coordinate projects and developments with other departments such as front-end, traffic engineering (data-scientist, AI and machine learning departments), design technical solutions and facilite developers labour. In this role I took care of leading with costumer meetings, coorginating back-end developments and doing documentation tasks such as System Architecture designing, tasks supervisions, Test Cases desiging and supervising compliance of the project's requirements. 
 
 ### Remarkable projects and use cases
-Here you are some remarkable projects section to read in deep about my thoughts about the projects I participated in this company and, adittionally, a use case of my proactivity and determination soft skills and another use case of my technical abilities.
-
 <div class="posts">
     {% for post in site.categories['SICE'] %}
         {% include post-card.html %}
@@ -34,7 +32,6 @@ My second project in the company was [SENDA](https://www.gmv.com/en-es/products/
 **Used technology: C++, Python, Bash-scripting, Cross-platform compilers (Make/CMake), Linux Daemons, Eclipse, Oscilloscope**
 
 ### Remarkable projects and use cases
-
 <div class="posts">
     {% for post in site.categories['GMV'] %}
         {% include post-card.html %}
@@ -55,7 +52,6 @@ In the background I helped to maintain an own product, a CMMS (Computerized Main
 **Used technology: ASP/NET, JS, CSS3, HTML5, IIS, SQL**
 
 ### Remarkable projects and use cases
-
 <div class="posts">
     {% for post in site.categories['Infogestión'] %}
         {% include post-card.html %}

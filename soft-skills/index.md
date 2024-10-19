@@ -28,7 +28,7 @@ In this section I cover my remarkable soft-skills with some use cases
 
 # Continuous Learning
 <div class="posts">
-    {% for post in site.tags['continuous learning'] %}
+    {% for post in site.tags['Continuous learning'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>

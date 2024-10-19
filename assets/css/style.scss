@@ -24,7 +24,7 @@
   }
 }
 
-.posts, .languages{
+.posts, .skills{
   column-gap: 0.3em;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   justify-content: flex-start;
 }
 
-.post-card, .lang-card{
+.post-card, .skill-card{
   break-inside: avoid;
   display: flex;
   flex-direction: column;

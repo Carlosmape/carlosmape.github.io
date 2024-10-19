@@ -1,5 +1,6 @@
 title: Carlosmape | Computer - Software Engineer
 description: Welcome to my portfolio, know a little bit more about this Computer Engineer and technology enthusiast!
 show_menu: true
+permalink: /:categories/:title:output_ext
 google_analytics:
 theme: jekyll-theme-cayman

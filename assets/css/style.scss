@@ -24,7 +24,7 @@
   }
 }
 
-.posts{
+.posts, .languages{
   column-gap: 0.3em;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   justify-content: flex-start;
 }
 
-.post-card{
+.post-card, .lang-card{
   break-inside: avoid;
   display: flex;
   flex-direction: column;

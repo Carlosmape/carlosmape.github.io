@@ -166,7 +166,8 @@ img.icon {
   filter: invert(1);
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn 
+{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
@@ -206,12 +207,14 @@ img.icon {
   animation: centered-typing 2s steps(20, end) 1s forwards;
 }
 
-@keyframes typing {
+@keyframes typing 
+{
   from { width: 0; }
   to {  width: 100%; }
 }
 
-@keyframes centered-typing {
+@keyframes centered-typing 
+{
   from { width: 0; margin-left: 50%; }
   to {  width: 100%; margin-left: 0%; }
 }
@@ -220,3 +223,38 @@ span.date{
   font-size: large;
   color: grey;
 }
+
+.skill {
+  margin: 0.3em;
+  display: flex;
+  align-items: baseline;
+}
+.skill-name {
+  width: 25%;
+}
+.skill-bar
+{
+  width: 75%;
+  border-radius: 0.3em;
+  overflow: hidden;
+  padding: 0.3em;
+}
+.skill-bar * {
+  margin: 0 !important;
+}
+.skill-fill{ 
+  width: 100%;   
+  animation: typing 1s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.skill-fill-0{ width: 0%;   }
+.skill-fill-1{ width: 10%;  }
+.skill-fill-2{ width: 20%;  }
+.skill-fill-3{ width: 30%;  }
+.skill-fill-4{ width: 40%;  }
+.skill-fill-5{ width: 50%;  }
+.skill-fill-6{ width: 60%;  }
+.skill-fill-7{ width: 70%;  }
+.skill-fill-8{ width: 80%;  }
+.skill-fill-9{ width: 90%;  }
+.skill-fill-10{ width: 100%;}

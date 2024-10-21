@@ -5,6 +5,7 @@ description: No description provided
 ---
 {% assign tehcList = ''|split:'' %}
 {% assign langList = ''|split:'' %}
+{% assign osList = ''|split:'' %}
 {% assign idesList = ''|split:'' %}
 {% for p in site.posts %}
     {% if p.technologies.size %}
@@ -12,6 +13,9 @@ description: No description provided
     {% endif %}
     {% if p.languages.size %}
         {% assign langList = langList | concat: p.languages | uniq | sort %}
+    {% endif %}
+    {% if p.os.size %}
+        {% assign osList = osList | concat: p.os | uniq | sort %}
     {% endif %}
     {% if p.ides.size %}
         {% assign idesList = idesList | concat: p.ides | uniq | sort %}
@@ -30,20 +34,31 @@ description: No description provided
     {% if lCount > maxLangCount %}{% assign maxLangCount = lCount %}{% endif %}
 {% endfor %}
 
+{% assign maxOsCount = 0 %}
+{% for o in osList %}
+    {% assign oCount = site.posts | where: 'os', o | size %}
+    {% if oCount > maxOsCount %}{% assign maxOsCount = oCount %}{% endif %}
+{% endfor %}
+
 {% assign maxIdesCount = 0 %}
 {% for i in idesList %}
     {% assign iCount = site.posts | where: 'ides', i | size %}
     {% if iCount > maxIdesCount %}{% assign maxIdesCount = iCount %}{% endif %}
 {% endfor %}
 
-# Technologies
+## Operative systems
+{% for skill in osList %}
+{% assign val =  site.posts | where: 'os', skill | size %}
+{% assign punct = val | times:10 | divided_by: maxOsCount %}
+{% include skill-bar.html %}
+{% endfor %}
+## Technologies
 {% for skill in techList %}
 {% assign val =  site.posts | where: 'technologies', skill | size %}
 {% assign punct = val | times:10 | divided_by: maxTechCount %}
 {% include skill-bar.html %}
 {% endfor %}
-# Programming
-## Languages
+## Programing Languages
 {% for skill in langList %}
 {% assign val =  site.posts | where: 'languages', skill | size %}
 {% assign punct = val | times:10 | divided_by: maxLangCount %}

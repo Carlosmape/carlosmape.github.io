@@ -1,29 +1,125 @@
 ---
 layout: default
-title: Projects
-description: Some of projects I participated I consider remarkables
+title: Projects and use cases
+description: In this section I will regularly upload some articles with interesting things I done
 ---
+<div class="skills">
+  <select id="filter-tags" class="skill-card backgrounded">
+    <option value="">Type</option>
+    {% for tag in site.tags %}
+      <option value="{{tag[0]}}">{{tag[0]}}</option>
+    {% endfor %}
+  </select>
+  <!-- Filter by Dynamic tags -->
+  {% for hardskill in site.data %}
+  <select id="filter-{{hardskill[0]}}" class="skill-card backgrounded">
+    <option value="">{{hardskill[0] | capitalize}}</option>
+    {% for skill in hardskill[1] %}
+      <option value="{{ skill }}">{{ skill }}</option>
+    {% endfor %}
+  </select>
+  {% endfor %}
+</div>
 
-# Remarkable Professional Projects
-These are, in my opinion, mostly remarkable projects I took part of:
+# Projects and use cases
+<div class="posts">
+  {% for usecase in site.posts %}
+    {% include post-card.html %}
+  {% endfor %}
+</div>
 
-| Company (sector)  | Project's Page                   | Technology |
-|:------------------|:---------------------------------|:-----------|
-| SICE (ITS)        |[SIDERA SCADA](/projects/sidera)  |C++, C#		| 
-| GMV (defense)     |[SENDA](/projects/senda)          |C++, Python	|
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Define filter groups including dynamic filters
+  const filterGroups = ['tags' {%for hardskill in site.data%},'{{hardskill[0]}}'{%endfor%}];
+  const projects = document.querySelectorAll('.post-card-wrapper'); // Select all post card wrappers
 
-# Personal/Academic Projects
-There are some of my personal/academic projects:
+  // Function to get the selected value for a given filter group
+  function getSelectedValue(group) {
+    const selectElement = document.getElementById(`filter-${group}`);
+    return selectElement ? selectElement.value.toLowerCase() : '';
+  }
 
-| Project           				| Project's Repository[⁽¹⁾](#info)															| Technology  			|
-|:----------------------------------|:------------------------------------------------------------------------------------------|:----------------------|
-| LoreEngine        				|[LoreEngine](/projects/lorengine/) *(Private repo)*										|Python					| 
-| Calendar (Ulauncher plugin) 		|[carlosmape/ulauncher-calendar](https://github.com/Carlosmape/ulauncher-calendar)			|Python, Google SDK		|
-| Cyclock    						|[Cylock](/projects/cylock/)																	|Java, Android SDK 		| 
-| Project's template (NeoVim plugin)|[carlosmape/project-templates.nvim](https://github.com/Carlosmape/project-templates.nvim)	|Vim Script, Python		|
-| CAMS (simple CMS) 				|[carlosmape/CaMS](http://github.com/carlosmape/CAMS)										|PHP, JS, HTML5, CSS3	|
+  // Function to filter projects
+  function filterProjects() {
+    const selectedFilters = {};
 
-You can find all my personal projects in [my github](https://github.com/Carlosmape)
+    // Gather selected filter values
+    filterGroups.forEach(group => {
+      selectedFilters[group] = getSelectedValue(group);
+    });
 
-### Info
-*⁽¹⁾ Some project could be in a private repository, if so, I explained in further detail on my website instead of link to the repo*
+    projects.forEach(project => {
+      // Check if project matches all selected filters
+      const projectTags = project.dataset.tags.toLowerCase().split('$').map(tag => tag.trim());
+      const matchesTags = !selectedFilters.tags || projectTags.includes(selectedFilters.tags);
+      
+      // Check dynamic filters
+      const matchesDynamicFilters = filterGroups.slice(2).every(group => {
+        if (selectedFilters[group]) {
+          const projectValues = project.dataset[group].toLowerCase().split('$').map(value => value.trim());
+          return projectValues.includes(selectedFilters[group]);
+        }
+        return true; // If no filter is selected, match is true
+      });
+
+      // Show or hide project based on all filters
+      if (matchesTags && matchesDynamicFilters) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+
+    // Show or hide the "no results" message
+    const visibleProjects = [...projects].filter(project => project.style.display === 'block');
+
+    // Update URL parameters
+    updateURL(selectedFilters);
+  }
+
+  // Function to update URL parameters
+  function updateURL(filters) {
+    const urlParams = new URLSearchParams();
+    filterGroups.forEach(group => {
+      if (filters[group]) {
+        urlParams.set(group, filters[group]);
+      }
+    });
+
+    // Update the browser's address bar without reloading the page
+    const newURL = `${window.location.pathname}?${urlParams.toString()}`;
+    history.replaceState(null, '', newURL);
+  }
+
+  // Function to load selected filter values from URL
+  function loadFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    filterGroups.forEach(group => {
+      if (urlParams.has(group)) {
+        const selectedValue = urlParams.get(group);
+        const selectElement = document.getElementById(`filter-${group}`);
+        if (selectElement) {
+          selectElement.value = selectedValue;
+        }
+      }
+    });
+
+    // Trigger filtering based on URL parameters
+    filterProjects();
+  }
+
+  // Add event listeners to dropdowns
+  filterGroups.forEach(group => {
+    const selectElement = document.getElementById(`filter-${group}`);
+    if (selectElement) {
+      selectElement.addEventListener('change', filterProjects);
+    }
+  });
+
+  // Load filter values from URL on page load
+  loadFromURL();
+});
+</script>
+

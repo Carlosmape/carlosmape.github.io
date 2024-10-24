@@ -1,0 +1,19 @@
+<div class="post-card-wrapper"
+     data-tags="{{ usecase.tags | join: '$' | downcase }}"
+     data-categories="{{ usecase.categories | join: '$' | downcase }}"
+     data-languages="{{ usecase.languages | join: '$' | downcase }}"
+     data-technologies="{{ usecase.technologies | join: '$' | downcase }}"
+     data-os="{{ usecase.os | join: '$' | downcase }}"
+     data-ides="{{ usecase.ides | join: '$' | downcase }}"
+     data-ddbb="{{ usecase.ddbb | join: '$' | downcase }}">
+
+	<a href="{{ usecase.url }}" class="post-card backgrounded" title="{{ usecase.description }}">
+		<div class="post-date">{{ usecase.date | split: " " | first | split: "-" | first}}</div>
+		<div class="post-title">{{ usecase.title }}</div>
+		<div class="post-tags">
+			{% for tag in usecase.tags %}
+			<div class="post-tag-{{ tag }}">{{ tag }}</div>
+			{% endfor %}
+		</div>
+	</a>
+</div>

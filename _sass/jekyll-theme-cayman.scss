@@ -91,7 +91,7 @@ a {
 	color: $header-heading-color;
 	text-align: center;
 	background-color: $header-bg-color;
-	background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+	background-image: $bg-gradient;
 
 	@include large {
 		padding: 5rem 6rem;
@@ -333,9 +333,11 @@ a {
 }
 
 .site-footer {
-	padding-top: 2rem;
 	margin-top: 2rem;
+	padding: 1rem;
 	border-top: solid 1px $hr-border-color;
+    display: flex;
+    align-items: baseline;
 
 	@include large {
 		font-size: 1rem;
@@ -355,12 +357,11 @@ a {
 	font-weight: bold;
 }
 .site-footer-contact {
-	display: block;
+    display: inline-flex;
 	a {
     	margin: 0.5em;
 	}
 }
 
 .site-footer-credits {
-	color: $blockquote-text-color;
 }

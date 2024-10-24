@@ -1,0 +1,7 @@
+<h3>Related entries</h3>
+<div class="posts">
+	{% assign post_to_render = site.related_posts %}
+	{% for usecase in post_to_render %}
+	{% include post-card.html %}
+	{% endfor %}
+</div>

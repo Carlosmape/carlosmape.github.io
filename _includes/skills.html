@@ -1,0 +1,6 @@
+{% for hardskills in site.data %}
+{% assign skill = hardskills[0] %}
+{% for s in page[skill] %}
+{% include skill-bubble.html %}
+{% endfor %}
+{% endfor %}

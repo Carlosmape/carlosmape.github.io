@@ -1,115 +1,174 @@
 ---
 ---
-
 @import 'jekyll-theme-cayman';
 
+.backgrounded{
+  background: linear-gradient(-45deg, $bg-color-primary, $bg-color-secondary, $bg-color-terciary, $bg-color-cuaternary);
+  animation: gradient 15s ease-in-out infinite;
+  background-size: 400em 400em;
+}
 
 .page-header{
-	background: linear-gradient(-45deg, $bg-color-primary, $bg-color-secondary, $bg-color-terciary, $bg-color-cuaternary);
-	animation: gradient 15s ease-in-out infinite;
-	background-size: 400% 400%;
+
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.posts{}
-
-.posts .btn{
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.5);
-	border-color: rgba(0, 0, 0, 0.4);
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 0.3rem;
-	transition: color 0.2s, background 0.2s, border-color 0.2s;
-	&:hover{
-		background: rgba(0, 0, 0, 0.1);
-	}
+.posts, .skills{
+  column-gap: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
 }
 
-.post-date, .post-tags{
-	display: inline-flex;
+.post-card, .skill-card{
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  // width:22em;
+  // height:11em;
+  margin: 0 0 0.3em 0 !important;
+  padding: 0.6rem 0.9rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  color: $header-heading-color;
+  &:hover{
+    text-decoration: none;
+    opacity:60%;
+    transition: opacity 0.2s
+  }
 }
-.post-tags *{
-	margin: 0.3rem !important;
-	padding: 0.3rem;
-	border-radius: 0.3rem;
-	background: $bg-color-cuaternary;
-	color: $header-heading-color;
+.skill-card {  }
+
+.post-date, .post-tags, .post-cats{
+  // display: inline-flex;
+}
+.post-date {
+  opacity: 0.6;
+  font-size: smaller;
+  align-self: end;
+}
+
+.post-tags, .post-cats{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.post-tags *, .post-cats *{
+  break-inside:avoid;
+  margin: 0.3rem !important;
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  color: $header-heading-color;
 }
 
 .dropdown {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0px;
+
+  button{
+    @include small {
+      margin-bottom:0px;
+    }
+  }
 }
 .dropdown-content {
-	display: none;
-	position: absolute;
-	width: 100%;
-	overflow: auto;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown:hover {
+  background: none;
+  border: none;
+}
+.dropdown:hover button {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
-}
+  display: flex;
+  position: absolute;
+  top: 4em;
 
+  @include small {
+    margin-top:1em;
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+
+  animation: fadeIn 1s;
+}
 .circular--landscape {
-	display: inline-block; 
-	position: relative; 
-	width: $img-square-size; 
-	height: $img-square-size; 
-	overflow: hidden; 
+  display: inline-block; 
+  position: relative; 
+  width: $img-square-size; 
+  height: $img-square-size; 
+  overflow: hidden; 
 }
 
 .circular--landscape img { 
-	width: auto; 
-	height: 100%; 
-	margin-left: -50px; 
+  width: auto; 
+  height: 100%; 
+  margin-left: -50px; 
 }
 
 .circular--portrait { 
-	position: relative; 
-	width: $img-square-size; 
-	height: $img-square-size; 
-	overflow: hidden; 
+  position: relative; 
+  width: $img-square-size; 
+  height: $img-square-size; 
+  overflow: hidden; 
 } 
 
 .circular--portrait img { 
-	width: 100%; 
-	height: auto; 
+  width: 100%; 
+  height: auto; 
 }
 
 .circular--landscape, .circular--square, .circular--portrait {
-	border-radius: 50%;
-	box-shadow: 0px 3px 10px;
-	margin: auto;
+  border-radius: 50%;
+  box-shadow: 0px 3px 10px;
+  margin: auto;
 }
 
 .upper-img {
-    margin-top: -4.5rem !important;
+  margin-top: -4rem !important;
 }
 
 img.icon {
-    // width: 2*$icon-size;
-    width: $icon-size;
-    vertical-align: bottom;
-    fill: $header-heading-color;
-    // border: solid 1px;
-    // border-radius: 50%;
-    // padding: $icon-size/2;
+  width: $icon-size;
+  vertical-align: bottom;
+  filter: invert(1);
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn 
+{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
@@ -118,7 +177,97 @@ img.icon {
   animation: fadeIn 1s;
 }
 
-span.date{
-	font-size: large;
-	color: grey;
+.site-footer {
+  padding: 3rem 4rem;
+  display: block;
 }
+.site-footer-credits{
+  display:block;
+}
+
+h1, h2, h3, h4
+.typed-out,
+.typed-out-d,
+.centered-typed-out,
+.centered-typed-out-d{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+h1, .typed-out{
+  animation: typing 2s steps(20, end) forwards;
+}
+h2, .typed-out-d{
+  animation: typing 2s steps(20, end) 1s forwards;
+}
+h3, .typed-out{
+  animation: typing 2s steps(20, end) 2s forwards;
+}
+h4, .typed-out-d{
+  animation: typing 2s steps(20, end) 3s forwards;
+}
+.centered-typed-out,
+.centered-typed-out-d{
+  margin-left: 50%;
+}
+.centered-typed-out{
+  animation: centered-typing 2s steps(20, end) forwards;
+}
+.centered-typed-out-d{
+  animation: centered-typing 2s steps(20, end) 1s forwards;
+}
+
+@keyframes typing 
+{
+  from { width: 0; }
+  to {  width: 100%; }
+}
+
+@keyframes centered-typing 
+{
+  from { width: 0; margin-left: 50%; }
+  to {  width: 100%; margin-left: 0%; }
+}
+
+span.date{
+  font-size: large;
+  color: grey;
+}
+.skill {
+  margin: 0.3em;
+  display: flex;
+  align-items: baseline;
+}
+.skill-name {
+  width: 25%;
+}
+.skill-bar
+{
+  width: 75%;
+  border-radius: 0.3em;
+  overflow: hidden;
+  padding: 0.3em;
+}
+.skill-bar * {
+  margin: 0 !important;
+}
+.skill-fill{ 
+  width: 100%;   
+  animation: typing 1s;
+  background-color: white;
+  color: $body-text-color;
+  align-content: end;
+}
+.skill-fill-0{  width: 0%;   }
+.skill-fill-1{  width: 10%;  }
+.skill-fill-2{  width: 20%;  }
+.skill-fill-3{  width: 30%;  }
+.skill-fill-4{  width: 40%;  }
+.skill-fill-5{  width: 50%;  }
+.skill-fill-6{  width: 60%;  }
+.skill-fill-7{  width: 70%;  }
+.skill-fill-8{  width: 80%;  }
+.skill-fill-9{  width: 90%;  }
+.skill-fill-10{ width: 100%;}
+
+option { color: $body-text-color; }

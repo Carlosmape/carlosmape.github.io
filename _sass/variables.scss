@@ -12,6 +12,7 @@ $bg-color-primary: #ee7752 !default;
 $bg-color-secondary: #e73c7e !default;
 $bg-color-terciary: #23a6d5 !default;
 $bg-color-cuaternary: #23d5ab !default;
+$bg-gradient: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
 //Images
 $img-square-size: 250px;

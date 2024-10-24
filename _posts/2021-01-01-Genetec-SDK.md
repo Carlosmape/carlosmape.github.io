@@ -4,7 +4,10 @@ title: Genetec SDK integration in SIDERA
 description: New features, but improving existent code, always
 tags: ['Best practices', 'Proactivity', 'Problem resolution', 'Proficiency']
 categories: ['SICE', 'Professional project']
+os: ['Windows']
 languages: ['C++', 'C#']
+ides: ['Visual Studio']
+ddbb: ['SQL Server']
 ---
 # GENETEC SDK
 One of my first task in [SICE](/career/#sice-its-2021now) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in [SIDERA](./sidera). My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.

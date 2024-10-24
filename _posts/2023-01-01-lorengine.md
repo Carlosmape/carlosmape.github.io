@@ -2,8 +2,12 @@
 layout: post
 title: LoreEngine
 description: My own game engine and my first Python project
-tags: ['Investigation']
+tags: ['Curiosity', 'Continuous learning']
 categories: ['Personal project']
+os: ['Linux']
+languages: ['Python']
+technologies: ['Cross-platform']
+ides: ['Neo-Vim']
 ---
 
 # Introduction

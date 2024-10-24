@@ -1,12 +1,7 @@
-{% if page.layout == 'post' %}
-	{% assign post_to_render = site.related_posts %}
-	<h4>Related entries</h4>
-{% else %}
-	{% assign post_to_render = site.posts %}
-	<h4>All entries</h4>
-{% endif %}
+<h3>Related entries</h3>
 <div class="posts">
-		{% for post in post_to_render %}
-			{% include post-card.html %}
-		{% endfor %}
+	{% assign post_to_render = site.related_posts %}
+	{% for post in post_to_render %}
+	{% include post-card.html %}
+	{% endfor %}
 </div>

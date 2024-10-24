@@ -1,6 +1,13 @@
+{% for os in page.os %}
+<a class="skill-card backgrounded" href="/hard-skills">{{ os }}</a>
+{% endfor %}
 {% for tech in page.technologies %}
 <a class="skill-card backgrounded" href="/hard-skills">{{ tech }}</a>
+{% endfor %}
+{% for ide in page.ides %}
+<a class="skill-card backgrounded" href="/hard-skills">{{ ide }}</a>
 {% endfor %}
 {% for lang in page.languages %}
 <a class="skill-card backgrounded" href="/hard-skills">{{ lang }}</a>
 {% endfor %}
+

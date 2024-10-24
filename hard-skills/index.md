@@ -1,78 +1,17 @@
 ---
 layout: default
-title: Test Page
-description: No description provided
+title: Hard Skills
+description: Met here all technical skills
 ---
-{% assign tehcList = ''|split:'' %}
-{% assign langList = ''|split:'' %}
-{% assign osList = ''|split:'' %}
-{% assign idesList = ''|split:'' %}
-{% for p in site.posts %}
-    {% if p.technologies.size %}
-        {% assign techList = techList | concat: p.technologies | uniq | sort %}
-    {% endif %}
-    {% if p.languages.size %}
-        {% assign langList = langList | concat: p.languages | uniq | sort %}
-    {% endif %}
-    {% if p.os.size %}
-        {% assign osList = osList | concat: p.os | uniq | sort %}
-    {% endif %}
-    {% if p.ides.size %}
-        {% assign idesList = idesList | concat: p.ides | uniq | sort %}
-    {% endif %}
-{% endfor %}
+<!-- <pre> -->
+<!-- {{ site | inspect }} -->
+<!-- </pre> -->
 
-{% assign maxTechCount = 0 %}
-{% for t in techList %}
-    {% assign tCount = site.posts | where: 'technologies', t | size %}
-    {% if tCount > maxTechCount %}{% assign maxTechCount = tCount %}{% endif %}
-{% endfor %}
-
-{% assign maxLangCount = 0 %}
-{% for l in langList %}
-    {% assign lCount = site.posts | where: 'languages', l | size %}
-    {% if lCount > maxLangCount %}{% assign maxLangCount = lCount %}{% endif %}
-{% endfor %}
-
-{% assign maxOsCount = 0 %}
-{% for o in osList %}
-    {% assign oCount = site.posts | where: 'os', o | size %}
-    {% if oCount > maxOsCount %}{% assign maxOsCount = oCount %}{% endif %}
-{% endfor %}
-
-{% assign maxIdesCount = 0 %}
-{% for i in idesList %}
-    {% assign iCount = site.posts | where: 'ides', i | size %}
-    {% if iCount > maxIdesCount %}{% assign maxIdesCount = iCount %}{% endif %}
-{% endfor %}
-
-## Operative systems
-{% for skill in osList %}
-{% assign val =  site.posts | where: 'os', skill | size %}
-{% assign punct = val | times:10 | divided_by: maxOsCount %}
+{% for d in site.data %}
+# {{ d[0] | capitalize }}
+{% assign val = d[1] | size %}
+{% for skill in d[1] %}
+{% assign punct = site.posts | where: d[0], skill | size %}
 {% include skill-bar.html %}
 {% endfor %}
-## Technologies
-{% for skill in techList %}
-{% assign val =  site.posts | where: 'technologies', skill | size %}
-{% assign punct = val | times:10 | divided_by: maxTechCount %}
-{% include skill-bar.html %}
 {% endfor %}
-## Programing Languages
-{% for skill in langList %}
-{% assign val =  site.posts | where: 'languages', skill | size %}
-{% assign punct = val | times:10 | divided_by: maxLangCount %}
-{% include skill-bar.html %}
-{% endfor %}
-## IDEs
-{% for skill in idesList %}
-{% assign val =  site.posts | where: 'ides', skill | size %}
-{% assign punct = val | times:10 | divided_by: maxIdesCount %}
-{% include skill-bar.html %}
-{% endfor %}
-## Paradigms
-
-# Engineering
-## Methodologies
-## Documentation
-## Software life-cycle

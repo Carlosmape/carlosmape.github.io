@@ -4,7 +4,11 @@ title: Catenary energization algorithm for SIDERA
 description: A high performance algorithm using DFS
 tags: ['Performance', 'Innovation', 'Best practices']
 categories: ['SICE', 'Professional project']
+os: ['Windows']
 languages: ['C++']
+technologies: ['Algorithm']
+ides: ['Visual Studio']
+ddbb: ['SQL Server']
 ---
 ## Catenary energization calculation (a recursive DFS approach to solve the problem)
 OSC is a windows service that is written using C++ 11 standard to take advantage of the [Smart Pointers](https://en.cppreference.com/book/intro/smart_pointers). The main goal is to real time check the satate of energization of catenary sections along the railway. Following image is a portion of the entire electrical schema to be calculated in this project:

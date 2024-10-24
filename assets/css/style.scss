@@ -52,6 +52,7 @@
     transition: opacity 0.2s
   }
 }
+.skill-card {  }
 
 .post-date, .post-tags, .post-cats{
   // display: inline-flex;
@@ -254,6 +255,7 @@ span.date{
   width: 100%;   
   animation: typing 1s;
   background-color: rgba(0, 0, 0, 0.2);
+  align-content: end;
 }
 .skill-fill-0{  width: 0%;   }
 .skill-fill-1{  width: 10%;  }

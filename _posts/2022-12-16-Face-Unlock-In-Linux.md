@@ -2,8 +2,8 @@
 layout: post
 title: Linux and face recognition authorization
 description: How to configure Face recognition in linux using FOSS to avoid usage of passwords
+categories: ['Personal', 'Project']
 tags: ['Curiosity']
-categories: ['Personal project']
 os: ['Linux']
 technologies: ['Security']
 ides: ['Neo-Vim']

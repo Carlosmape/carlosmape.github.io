@@ -2,8 +2,8 @@
 layout: post
 title: Genetec SDK integration in SIDERA
 description: New features, but improving existent code, always
+categories: ['Professional Project', 'SICE']
 tags: ['Best practices', 'Proactivity', 'Problem resolution', 'Proficiency']
-categories: ['SICE', 'Professional project']
 os: ['Windows']
 languages: ['C++', 'C#']
 ides: ['Visual Studio']

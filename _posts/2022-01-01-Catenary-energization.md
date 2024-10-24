@@ -2,8 +2,8 @@
 layout: post
 title: Catenary energization algorithm for SIDERA
 description: A high performance algorithm using DFS
+categories: ['Professional', 'Use case', 'SICE']
 tags: ['Performance', 'Innovation', 'Best practices']
-categories: ['SICE', 'Professional project']
 os: ['Windows']
 languages: ['C++']
 technologies: ['Algorithm']

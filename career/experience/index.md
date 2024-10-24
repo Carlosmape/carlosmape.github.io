@@ -33,7 +33,7 @@ My second project in the company was [SENDA](https://www.gmv.com/en-es/products/
 
 ### Remarkable projects and use cases
 <div class="posts">
-    {% for post in site.categories['GMV'] %}
+    {% for usecase in site.categories['GMV'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>

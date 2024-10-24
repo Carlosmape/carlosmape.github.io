@@ -7,7 +7,7 @@ description: Some of projects I participated I consider remarkables
 # Remarkable Professional Projects
 These are, in my opinion, mostly remarkable projects I took part of:
 <div class="posts">
-    {% for post in site.categories['Professional project'] %}
+    {% for usecase in site.categories['Professional project'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>
@@ -15,10 +15,10 @@ These are, in my opinion, mostly remarkable projects I took part of:
 # Personal/Academic Projects
 There are some of my personal/academic projects:
 <div class="posts">
-    {% for post in site.categories['Personal project'] %}
+    {% for usecase in site.categories['Personal project'] %}
         {% include post-card.html %}
     {% endfor %}
-    {% for post in site.categories['Academic project'] %}
+    {% for usecase in site.categories['Academic project'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>

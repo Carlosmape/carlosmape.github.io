@@ -254,7 +254,8 @@ span.date{
 .skill-fill{ 
   width: 100%;   
   animation: typing 1s;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: $body-text-color;
   align-content: end;
 }
 .skill-fill-0{  width: 0%;   }
@@ -268,3 +269,5 @@ span.date{
 .skill-fill-8{  width: 80%;  }
 .skill-fill-9{  width: 90%;  }
 .skill-fill-10{ width: 100%;}
+
+option { color: $body-text-color; }

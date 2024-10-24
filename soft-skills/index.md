@@ -7,7 +7,6 @@ description: No description provided
 In this section I cover my remarkable soft-skills with some use cases
 
 # Team Work
-
 <div class="posts">
     {% for usecase in site.tags['Team work'] %}
         {% include post-card.html %}

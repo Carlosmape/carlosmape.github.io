@@ -11,9 +11,9 @@ description: Welcome to my portfolio, know a little bit more about this Computer
 ## Computer Engineer
 Hello and welcome! I am Carlos Martín, a highly skilled and passionated Tech Lead-Developer specialized in IT, Transportation and Defense. I am excited to present my portfolio, showcasing my expertise and how I can bring value to your organization.
 
-I have developed a wide range of technical and soft skills I find essential for a Tech Lead-Developer. In one hand, my [technical skills](/hard-skills/index.md) include proficiency in C/C++, Python, C# among others. In the other hand, my [soft skills](/soft-skills/index.md) encompass exceptional communication abilities, a collaborative approach to teamwork, and a proactive mindset. Enabling me to excel in dynamic work environments where problem-solving is paramount.
+I have developed a wide range of technical and soft skills I find essential for a **Tech Lead-Developer**. In one hand, my [technical skills](/hard-skills) include proficiency in **C/C++, Python, C#** among others. In the other hand, my [soft skills](/soft-skills) encompass exceptional **communication abilities**, a **collaborative** approach to teamwork, and a **proactive** mindset. Enabling me to excel in dynamic work environments where **problem-solving** is paramount.
 
-I have a proven track record of delivering exceptional results. Notable achievements include **TODO:[mention specific projects or initiatives where you made a significant impact]**. Through my contributions, I consistently drive innovation, streamline processes, and achieve measurable outcomes.
+I have a proven track record of delivering exceptional results. Notable achievements include being the **creator of a Data Warehouse** at my current job, **training and mentoring** junior colleagues, and **setting up my personal laptop from scratch using Arch Linux**. Through my contributions, I consistently drive innovation, streamline processes, and achieve measurable outcomes.
 
 I am confident that my experience, skills, and passion make me an excellent fit for a Teach Lead-Developer role. I look forward to discussing how my contributions can support your team's goals and objectives.
 

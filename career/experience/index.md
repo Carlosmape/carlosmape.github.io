@@ -15,7 +15,7 @@ Adittionally I took the role of **software analyst** in the product's back-end, 
 
 ### Remarkable projects and use cases
 <div class="posts">
-    {% for post in site.categories['SICE'] %}
+    {% for usecase in site.categories['SICE'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>

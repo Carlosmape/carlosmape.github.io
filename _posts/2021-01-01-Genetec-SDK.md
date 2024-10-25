@@ -2,7 +2,7 @@
 layout: post
 title: Genetec SDK integration in SIDERA
 description: New features, but improving existent code, always
-categories: ['Professional Project', 'SICE']
+categories: ['Professional', 'SICE']
 tags: ['Best practices', 'Proactivity', 'Problem resolution', 'Proficiency']
 os: ['Windows']
 languages: ['C++', 'C#']
@@ -10,10 +10,10 @@ ides: ['Visual Studio']
 ddbb: ['SQL Server']
 ---
 # GENETEC SDK
-One of my first task in [SICE](/career/#sice-its-2021now) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in [SIDERA](./sidera). My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.
+One of my first task in [SICE](/career/experience/) was to integrate Intrussion Access detection systems (from GENETEC's SDK) in [SIDERA](/projects/sidera). My firsts steps, obviously, were: to fromally design this new integration describing the functionality, the investigating the SDK and studying the way to include in our platform. After that, development process could be started.
 
 ## Development process
-This module of the application was very old, and may be one of the first external system integrated in [SIDERA](./sidera). [GENETEC](https://www.genetec.com/) is such a security software, in this case, to manage and monitorize CCTV cameras. [SIDERA](./sidera) working as a SCADA, integrate their SDK to have the state of the cameras synchronized. GENETEC is a complex system and it can be intuited in the code. A lot of time, a bunch of people modifying, fixing (and undo)... This module includes a GENETEC SDK wrapper library written in .NET C# and a C++ service that used it and communicates with [SIDERA](./sidera).
+This module of the application was very old, and may be one of the first external system integrated in SIDERA. [GENETEC](https://www.genetec.com/) is such a security software, in this case, to manage and monitorize CCTV cameras. SIDERA working as a SCADA, integrate their SDK to have the state of the cameras synchronized. GENETEC is a complex system and it can be intuited in the code. A lot of time, a bunch of people modifying, fixing (and undo)... This module includes a GENETEC SDK wrapper library written in .NET C# and a C++ service that used it and communicates with SIDERA.
 
 For this interoperability, I discovered a file contained 3k code lines. 3k lines of incomprehensible code. Complex (windows) system calls. The trouble is that it used Window's C#/C++ COM interoperability, a way to integrate .NET (C#) libraries in C++ but that converts the .NET method invocations in a dark entity with low mainability and a lot of duplicated code. This approach forces the developer to convert each method invocation parameter in Window's compatible types, encode and decode method params/returning values and a lot of things, from my point of view, unnecessary with current technology.
 I tried first to suppress these duplication by extracting (as far I could) common code to new functions. I fixed as well, old features and approaches of the C++ service side: DDBB queries scattered in multiple files, configuration parameters not validated and "bad managed" and another minor changes involved to our platform calls.

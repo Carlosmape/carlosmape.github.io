@@ -247,7 +247,8 @@ span.date{
   animation: typing 1s;
   background-color: white;
   color: $body-text-color;
-  align-content: end;
+  align-content: center;
+  font-size: small;
 }
 .skill-fill-0{  width: 0%;   }
 .skill-fill-1{  width: 10%;  }

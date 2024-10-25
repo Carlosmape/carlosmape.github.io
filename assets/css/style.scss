@@ -8,10 +8,6 @@
   background-size: 400em 400em;
 }
 
-.page-header{
-
-}
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -52,24 +48,20 @@
     transition: opacity 0.2s
   }
 }
-.skill-card {  }
 
-.post-date, .post-tags, .post-cats{
-  // display: inline-flex;
-}
 .post-date {
   opacity: 0.6;
   font-size: smaller;
   align-self: end;
 }
 
-.post-tags, .post-cats{
+.post-tags{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   // transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
-.post-tags *, .post-cats *{
+.post-tag {
   break-inside:avoid;
   margin: 0.3rem !important;
   padding: 0.3rem;

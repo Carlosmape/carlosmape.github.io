@@ -113,7 +113,6 @@
 .dropdown:hover .dropdown-content {
   display: flex;
   position: absolute;
-  top: 4em;
 
   @include small {
     margin-top:1em;

@@ -77,6 +77,7 @@ a {
 	@include small {
 		display: block;
 		width: 100%;
+        margin-bottom: 0em;
 		padding: 0.75rem;
 		font-size: 0.9rem;
 

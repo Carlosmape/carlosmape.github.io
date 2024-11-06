@@ -32,3 +32,6 @@ I finally decided to use **bspwm** for it well balanced customizability-performa
 
 # Hands on
 Ready! Time to spent tons of hours ricing :) literarly, try-error. Fix something, break it after. That were many month of my free time
+
+# Result
+The current state of the work could be preview on the [Github reposiory](https://github.com/Carlosmape/DesktopEnvironment-dotfiles/)

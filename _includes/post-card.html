@@ -7,12 +7,12 @@
      data-ides="{{ usecase.ides | join: '$' | downcase }}"
      data-ddbb="{{ usecase.ddbb | join: '$' | downcase }}">
 
-	<a href="{{ usecase.url }}" class="post-card backgrounded" title="{{ usecase.description }}">
+	<a href="{{ usecase.url }}" class="post-card" title="{{ usecase.description }}">
 		<div class="post-date">{{ usecase.date | split: " " | first | split: "-" | first}}</div>
 		<div class="post-title">{{ usecase.title }}</div>
-		<div class="post-tags">
+		<div class="skills">
 			{% for tag in usecase.tags %}
-			<div class="post-tag">{{ tag }}</div>
+			<div class="skill-card">{{ tag }}</div>
 			{% endfor %}
 		</div>
 	</a>

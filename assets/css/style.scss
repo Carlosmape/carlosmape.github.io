@@ -6,6 +6,7 @@
   background: linear-gradient(-45deg, $bg-color-primary, $bg-color-secondary, $bg-color-terciary, $bg-color-cuaternary);
   animation: gradient 15s ease-in-out infinite;
   background-size: 400em 400em;
+  color: $header-heading-color;
 }
 
 @keyframes gradient {
@@ -21,11 +22,15 @@
 }
 
 .posts, .skills{
+  border-radius: 0.3em;
   column-gap: 0.3em;
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: flex-start;
+}
+.posts{
+  padding:1em;
 }
 
 .post-card, .skill-card{
@@ -34,43 +39,35 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: stretch;
-  // width:22em;
-  // height:11em;
   margin: 0 0 0.3em 0 !important;
-  padding: 0.6rem 0.9rem;
+  padding: 0.6rem 0.6rem;
   text-decoration: none;
   border-radius: 0.3rem;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-style: solid;
   transition: color 0.2s, background 0.2s, border-color 0.2s;
-  color: $header-heading-color;
   &:hover{
     text-decoration: none;
     opacity:60%;
     transition: opacity 0.2s
   }
 }
-
+.post-card {
+  background-color: #FFF;
+  color: $body-text-color;
+}
+.skill-card{
+  font-size: smaller;
+}
+.post-title{
+  color: $section-headings-color;
+}
 .post-date {
   opacity: 0.6;
   font-size: smaller;
   align-self: end;
-}
-
-.post-tags{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  // transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-}
-.post-tag {
-  break-inside:avoid;
-  margin: 0.3rem !important;
-  padding: 0.3rem;
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  color: $header-heading-color;
+  color: $section-headings-color;
 }
 
 .dropdown {

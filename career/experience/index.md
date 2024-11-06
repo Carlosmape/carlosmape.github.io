@@ -21,7 +21,7 @@ My labour in SICE as a **software developer** is to maintain an SCADA (called SI
 
 Adittionally I took the role of **software analyst** in the product's back-end, to help my project manager to coordinate projects and developments with other departments such as front-end, traffic engineering (data-scientist, AI and machine learning departments), design technical solutions and facilite developers labour. In this role I took care of leading with costumer meetings, coorginating back-end developments and doing documentation tasks such as System Architecture designing, tasks supervisions, Test Cases desiging and supervising compliance of the project's requirements. 
 ## Remarkable projects and use cases
-<div class="posts">
+<div class="posts backgrounded">
     {% for usecase in site.categories['SICE'] %}
         {% include post-card.html %}
     {% endfor %}
@@ -44,7 +44,7 @@ In my first project as **software developer**, I worked for Madrid's Metro: an e
 My second project in the company was [SENDA](https://www.gmv.com/en-es/products/defense-and-security/senda), a positioning system for a spanish army new ship. Without going into much detail, I firstrly participated in the Testing Team (Google Test, PyTest), once created first tests suite version, the project's manager, lead me to took care of an entire recording system, to record different positioning device's raw data in order to generate a testing bench for my aeronautical team mates, who were developing the advanced positioning algorithms. I worked in a fork of the original code (C++), within crytical/real time system practices, I integrated INS, GPS, Galileo PRS and other devices, with low level decoding of these device's messages. 
 **Used technology: C++, Python, Bash-scripting, Cross-platform compilers (Make/CMake), Linux Daemons, Eclipse, Oscilloscope**
 ## Remarkable projects and use cases
-<div class="posts">
+<div class="posts backgrounded">
     {% for usecase in site.categories['GMV'] %}
         {% include post-card.html %}
     {% endfor %}
@@ -68,7 +68,7 @@ Secondly I designed and implemented another .NET desktop applications related to
 In the background I helped to maintain an own product, a CMMS (Computerized Maintenance Management Sofware) called [Nadilux](https://www.nadilux.com/) written in ASP/NET. I could work with customer information terminals and bluetooth printers.  
 **Used technology: ASP/NET, JS, CSS3, HTML5, IIS, SQL**
 ## Remarkable projects and use cases
-<div class="posts">
+<div class="posts backgrounded">
     {% for post in site.categories['Infogestión'] %}
         {% include post-card.html %}
     {% endfor %}

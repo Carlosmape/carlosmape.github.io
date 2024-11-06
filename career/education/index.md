@@ -8,6 +8,14 @@ languages: ['C++', 'NodeJS', 'Ruby', 'Java', 'Shell Scripting']
 ides: ['Neo-Vim', 'Android Studio', 'Eclipse']
 ddbb: ['MongoDB', 'Firebase', 'SQL']
 ---
+# Course: Business Intelligence
+## Gesforcan <span class="date">2024</span>
+<div class="skills">
+    <div class="skill-card backgrounded">Datawarehouse</div>
+    <div class="skill-card backgrounded">Management</div>
+</div>
+I gained practical knowledge in data-driven decision-making processes. The course covered key areas such as BI project management, including planning, resource coordination, and data quality assurance. I also learned about BI architecture, focusing on designing systems that integrate data sources, data warehouses, and ETL processes to deliver actionable insights through reporting and analysis tools. This experience provided me with the skills to contribute to the successful implementation of BI solutions in business environments.  
+
 # Course: NodeJS from scratch
 ## Udemy <span class="date">2022</span>
 <div class="skills">
@@ -45,8 +53,8 @@ Adroid development diploma is a reduced course from the original Android Develop
 
 I developed some sample applications but the most remarkable was the one I developed for the diploma's final workr: I worked in an IoT application that integrated an embedded system (an arduino nano with a GPRS module) with an Android app. The application provides users a secure solution to look out their bycicles by installing the IoT device in the bike's chasis and connecting to their phones. You can read this project in further detail in [Cylock](/projects/cylock) section.
 ## Final project
-<div class="posts">
-{% for usecase in site.categories['Academic Project'] %}
+<div class="posts backgrounded">
+{% for usecase in site.categories['Academic'] %}
 {% include post-card.html %}
 {% endfor %}
 </div>

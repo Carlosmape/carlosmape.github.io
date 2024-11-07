@@ -22,7 +22,7 @@ description: In this section I will regularly upload some articles with interest
 </div>
 
 # Projects and use cases
-<div class="posts backgrounded">
+<div class="posts">
   {% for usecase in site.posts %}
     {% include post-card.html %}
   {% endfor %}

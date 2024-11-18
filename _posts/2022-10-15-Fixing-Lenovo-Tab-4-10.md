@@ -1,37 +1,48 @@
 ---
 layout: post
-title: Fixing broken rooted tablet
-description: Retaking an old project to degoogle an Android tablet that ends with a paperweight
-categories: ['Personal', 'Use case']
-tags: ['Curiosity', 'Resilience']
+title: Fixing a Broken Rooted Tablet
+description: Reviving an old project to de-google an Android tablet that ended up as a paperweight
+categories: ['Personal']
+tags: ['Curiosity', 'Resilience', 'Problem resolution']
 os: ['Android']
 ---
 
-# State of the art
-Some time ago, I tried to root and de-google an old tablet. Just for fun and check by my self the process. Also I want to check if the Gapps consumes more resources (indeed more battery) and I could give more battery life to my device.
+# State of the Art
 
-I allowed to install custom [TWRP](https://twrp.me/about/) recovery system. After that I allowed rooted with [Magisk](https://themagisk.com/). All this knowledge comes from a huge research in internet (Reddit, XDA, and other Android forums). And some try-error. Once rooted, the first thing I done, was to create a system backup using TWRP. All seemed to be nice! Time to play with a rooted tabled and try to "de-google" it!
+Some time ago, I took on a personal challenge to root and "de-Google" an old Android tablet—just to experiment and learn about the process. My goal was to explore the potential for better battery life by removing resource-hungry Google apps and services. Additionally, I wanted to deepen my understanding of Android customizations and its ecosystem.
 
-I started by downloading some app removal for root (I dont know the name, I simply searched in Play Store and tryed some of them). It is worth to mention that I removed some apps, rebooted the device and tested if all were working again. I begin to remove known useless applications i.e.: Vendor pre-installed applications such as one called "Lenovo Tab 4 10" that just shows an usage demo, some useless games, and third party applications such as Amazon and Netflix. I discovered some hidden applications pre-installed by the manufacturer such as some japanese packages and a wierd launcher. I properly remove all of them.
+I started by installing the **TWRP** recovery system, followed by rooting the tablet with **Magisk**, which I had researched extensively through forums like Reddit and XDA. With these tools in place, I proceeded cautiously, ensuring I created backups of the system as I went along. The initial process was straightforward, and I was excited to see the tablet working after successfully rooting it.
 
-Some time late, in a further research I proposed to remove Google applications and services (each application leads me to investigate if there were Android applications or not). OK! I removed Maps, Gmail and even some other applcations such as account manager and Google Services!!. Time to make an "stable" backup. I turned on the tablet and entered to Recovery Mode (TWRP) to make a system backup. Ups, at this point the troubles begin... I dont know how or why, TWRP failed the backup process... I tried several times but the process always unexpected exited.
+## Removing Pre-installed Apps
 
-I tried to reboot the tablet again. Manufacturer's logo appears, all right. Android initializes and displays the lock screen, fine! Unfortunately for me, sudenly the device restarted. Initializes Android again and the same situation: few seconds after display the lock screen, the tablet reboots again.
+My first task was to remove bloatware and Google applications. I used various root-enabled app removal tools I found in the Play Store, testing and verifying the stability of the tablet after each step. I carefully removed useless vendor applications (such as demo apps and pre-installed games), followed by third-party apps like **Amazon** and **Netflix**. I even uncovered some hidden applications pre-installed by the manufacturer and removed them to streamline the system.
 
-Obviously, my maind says to me: quickly! restore to the latest maked backup!!. I started TWRP again, went to backup process, selected the properly backup image and wait until it finished the process. Rebooted the tablet again... and ... the issue appears again, the trouble was not fixed. I converted the old tablet in a paperweight.
+Once I had cleared the basic apps, I aimed for a more ambitious goal: to remove all **Google services**. This included applications like **Maps**, **Gmail**, **Google Account Manager**, and **Google Services Framework**. After this, I created a **stable backup** of the modified system—confident that the tablet was now truly "de-Googled"!
 
-# Some time later
-In this weekend I have some free time to literarly waste by researching and may be not fix the tab. 
+## Encountering Trouble: A Broken Tablet
 
-First of all, I tried to restore the old system backups. Not just one, all of them, from the newer to the older. Nothing different happens, the tablet keeped broken.
+However, my excitement was short-lived. When I attempted to reboot the tablet and enter recovery mode to perform another backup, the device kept restarting, stuck in a boot loop. I tried to restore the latest backup through TWRP, but to my dismay, the problem persisted. Despite multiple attempts to fix the issue, I had inadvertently turned my once-functional tablet into a **paperweight**.
 
-Let's do something different (may be my backups were corrupted or were including the origin of the issue): I started to look for an original ROM image from the manufacturer but I did not find anything. Instead I found an unofficial [Lineage OS ROM image](https://forum.xda-developers.com/t/rom-unofficial-9-0-tbx304f-l-x-lineageos-16-0-for-lenovo-tab4-10.4199623/page-2) compatible with my tablet. It is not official becouse Lineage OS Community has not this tablet in [their compatible devices list](https://wiki.lineageos.org/devices/). Nice! Why I should not try to install this room instead of the original manufacturer's one? Yeah, it is an unofficial image... it is not trusted and properly tested, but... What difference does it make if the tablet was already broken?. 
+## A New Approach: Reviving the Tablet
 
-I uploaded the image to my tablet SD card. Booted the tablet in Recovery mode but... what the heck? TWRP does not initializes. All the time, the tablet where running in the Recovery Menu. Oookay, no problem, lets reinstall TWRP throw fashboot Android's SDK command tool.
+After some time, I returned to the project, determined to fix the issue. I began by restoring all the old system backups—starting with the most recent and working backward. But the device still refused to boot. It was clear that the backups were either corrupted or included the source of the issue.
 
-Once installed, I enter on TWRP install menu, selected the Lineage OS ROM and waited to TWRP finished the process... But an `/data` partiton error appears in the installation log. So I researched about this error and found a tutorial to fix it. Apparently, `/data` partition was become corrupted, to fix it was needed to format the partition to another data format (in this case ext2) and format again to the original data format (ext4). If this format will fix the system partition, why not this fix my original trouble? I restarted the tablet (once again) and surprisingly, Android started from the scratch (such as if I recently bought it!) Android asks from permissions and so on. An What I have in my hands!? Android were working properly again!!
+Then, during my research, I discovered an **unofficial LineageOS ROM** compatible with my tablet. While LineageOS wasn’t officially supported for my device, I saw an opportunity. The tablet was already bricked, so what did I have to lose? I decided to take a risk and install the unofficial ROM, hoping it would bring my tablet back to life.
 
-At this point it was close to 3:00 A.M and I was tired but excited to know if I could (may be) install Lineage OS. I thought: last opportunity, if it does not work, I will go to sleep and may be another day will try to restore the system again. I rebooted one more time, started againt TWRP and try the final opportunity. The process finished properly this time, no error logs and an atractive button "Reboot" that were saying "push me" and... 
+## Overcoming Obstacles: Persistence Pays Off
 
-Tablet restarts and I saw the loading screen of Lineage OS! How wonderful when everything works first time... right? Too late to geek in to Lineage OS, time to sleep.
-(To be continued)
+I began by transferring the ROM to the tablet’s SD card and booting the device into recovery mode. Unfortunately, TWRP wasn’t initializing. No problem—I reinstalled TWRP using the **fastboot** command through Android's SDK tools. Once reinstalled, I selected the ROM and attempted to install it. However, an error related to the **/data** partition appeared, halting the process.
+
+Undeterred, I researched the error and found a solution. The **/data** partition had become corrupted, so I needed to reformat it. Following the instructions, I reformatted the partition to the **ext2** format and then back to **ext4**, the original format. I hoped this would resolve the issue, but I wasn’t entirely sure.
+
+To my surprise, after rebooting, Android started up from scratch, just as if it were a brand-new device. The tablet asked for permissions, and everything seemed to work as expected. Excited yet cautious, I decided to give LineageOS one last shot.
+
+## Success: LineageOS Installed
+
+Around 3:00 A.M., I tried again to install LineageOS. This time, everything went smoothly: no error logs, and the process finished successfully. I pressed "Reboot," and there it was—the **LineageOS** loading screen appeared! It was a thrilling moment of success, especially after all the setbacks I had encountered.
+
+As excited as I was, it was time to sleep. The project had been a great learning experience and a test of my **curiosity**, **problem-solving skills**, and **resilience**.
+
+(To be continued…)
+
+

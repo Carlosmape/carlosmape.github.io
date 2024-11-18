@@ -2,24 +2,35 @@
 layout: default
 title: Experience
 description: Here you have my work experience summary
-technologies: ['Networks', 'Algorithms']
+technologies: ['Networks', 'Algorithms', 'Critical/Real-Time Systems', 'Kinematics', 'SCADA']
 os: ['Linux', 'Windows']
-languages: ['C++', 'Python', 'C#', 'Shell Scripting']
+languages: ['C++', 'Python', 'C#', 'Shell Scripting', 'JavaScript']
 ides: ['Neo-Vim', 'Visual Studio', 'Eclipse']
 ddbb: ['SQL Server', 'PostgreSQL', 'TimescaleDB']
 ---
-# Tech Lead, Software Engineer
+
+# Tech Lead, Software Engineer  
 ## SICE <span class="date">2021/Now</span>
 <div class="skills">
     <div class="skill-card backgrounded">ITS</div>
     <div class="skill-card backgrounded">SCADA</div>
+    <div class="skill-card backgrounded">C++</div>
+    <div class="skill-card backgrounded">C# .NET</div>
+    <div class="skill-card backgrounded">SQL</div>
+    <div class="skill-card backgrounded">Python</div>
+    <div class="skill-card backgrounded">Sockets</div>
+    <div class="skill-card backgrounded">Multi-threading</div>
+    <div class="skill-card backgrounded">Windows Services</div>
+    <div class="skill-card backgrounded">Visual Studio</div>
+    <div class="skill-card backgrounded">Neo-Vim</div>
 </div>
-I started working for [SICE](https://www.sice.com/) as a **Software Engineer**. About what I was expecting for this role, was mainly to change the defense sector, however I was looking for keep in the sames technologies and practices I did in my last work: **critical/real-time systems and low level programming**. And keep adquiring business Knowledge and improvin all my tech and soft skills.
+At [SICE](https://www.sice.com/), I started as a **Software Engineer** specializing in **critical/real-time systems** and **low-level programming**, particularly in the development and maintenance of the SCADA system **SIDERA**. My main responsibilities included developing and maintaining C++ and C# .NET modules that communicate through **sockets** and process data from SQL-based databases.
 
-My labour in SICE as a **software developer** is to maintain an SCADA (called SIDERA) written mostly in C++ but with some C# .NET Framework modules that communicates each other using sockets and consumes information from the system throw SQL-like DDBB in the firsts spteps of the software engineer life-cycle. I participate in multiple SIDERA's modules such as OCS (a recursive DFS algirthm to calculate energization status of railway catenary sections), SIDERA integration with external data providers/consumers etc.  
+I was involved in multiple modules, including **OCS** (a recursive **DFS algorithm** for calculating the energization status of railway catenary sections) and **SIDERA’s integration** with external data providers and consumers.  
 **Used technology: C++, C# .NET Framework, SQL, Python, Batch-scripting, Multi-threading, Sockets, Windows Services, Visual Studio**
 
-Adittionally I took the role of **software analyst** in the product's back-end, to help my project manager to coordinate projects and developments with other departments such as front-end, traffic engineering (data-scientist, AI and machine learning departments), design technical solutions and facilite developers labour. In this role I took care of leading with costumer meetings, coorginating back-end developments and doing documentation tasks such as System Architecture designing, tasks supervisions, Test Cases desiging and supervising compliance of the project's requirements. 
+As a **Software Analyst**, I coordinated back-end developments and collaborated with various departments (e.g., front-end, traffic engineering, AI, and machine learning). I was responsible for customer meetings, documentation (system architecture, test cases), and ensuring project requirements were met.
+
 ## Remarkable projects and use cases
 <div class="posts">
     {% for usecase in site.categories['SICE'] %}
@@ -27,22 +38,28 @@ Adittionally I took the role of **software analyst** in the product's back-end, 
     {% endfor %}
 </div>
 
-
-
 <hr>
-# Software engineer
+
+# Software Engineer  
 ## GMV <span class="date">2019/2021</span>
 <div class="skills">
     <div class="skill-card backgrounded">ITS</div>
     <div class="skill-card backgrounded">Defense</div>
+    <div class="skill-card backgrounded">C++</div>
+    <div class="skill-card backgrounded">Python</div>
+    <div class="skill-card backgrounded">Cross-platform Compilation</div>
+    <div class="skill-card backgrounded">Linux Daemons</div>
+    <div class="skill-card backgrounded">Multi-threading</div>
+    <div class="skill-card backgrounded">Oscilloscope</div>
+    <div class="skill-card backgrounded">Eclipse</div>
+    <div class="skill-card backgrounded">SQL</div>
 </div>
-This was my second work experience. When I applied to [GMV](https://www.gmv.com/), I was looking for a larger company to previous one, to try join in a bigger software team where I could learn some software engineering practices, such as development methodologies, participate in code revisions, meetings and so on.
-
-In my first project as **software developer**, I worked for Madrid's Metro: an electrical/mechanical subway simulator, I applied kinematics and electrical calculations, minimum train frequency in a line etc. And another physical complex calculations.
+At [GMV](https://www.gmv.com/), I worked as a **Software Developer** and collaborated on several key projects. My first project involved developing an **electrical and mechanical subway simulator** for **Madrid's Metro**, applying complex **kinematic** and **electrical calculations** to model minimum train frequencies and other physical calculations.  
 **Used technology: C# .NET Framework, SQL, Multi-threading, Sockets, Windows Services, Visual Studio**
 
-My second project in the company was [SENDA](https://www.gmv.com/en-es/products/defense-and-security/senda), a positioning system for a spanish army new ship. Without going into much detail, I firstrly participated in the Testing Team (Google Test, PyTest), once created first tests suite version, the project's manager, lead me to took care of an entire recording system, to record different positioning device's raw data in order to generate a testing bench for my aeronautical team mates, who were developing the advanced positioning algorithms. I worked in a fork of the original code (C++), within crytical/real time system practices, I integrated INS, GPS, Galileo PRS and other devices, with low level decoding of these device's messages. 
+In my second project, I worked on [SENDA](https://www.gmv.com/en-es/products/defense-and-security/senda), a **positioning system** for the Spanish army's new ship. I first contributed to the **Testing Team** (using **Google Test** and **PyTest**) and later took on a larger role by handling the **data recording system** for **INS, GPS, Galileo PRS**, and other positioning devices. I focused on **low-level decoding** of device messages and maintained **critical/real-time system** practices.  
 **Used technology: C++, Python, Bash-scripting, Cross-platform compilers (Make/CMake), Linux Daemons, Eclipse, Oscilloscope**
+
 ## Remarkable projects and use cases
 <div class="posts">
     {% for usecase in site.categories['GMV'] %}
@@ -51,25 +68,34 @@ My second project in the company was [SENDA](https://www.gmv.com/en-es/products/
 </div>
 
 <hr>
-# Software Engineer
+
+# Software Engineer  
 ## InfoGestión <span class="date">2017/2019</span>
 <div class="skills">
     <div class="skill-card backgrounded">CMMS</div>
     <div class="skill-card backgrounded">ERP</div>
+    <div class="skill-card backgrounded">C# .NET</div>
+    <div class="skill-card backgrounded">SQL</div>
+    <div class="skill-card backgrounded">ASP.NET</div>
+    <div class="skill-card backgrounded">JavaScript</div>
+    <div class="skill-card backgrounded">HTML5</div>
+    <div class="skill-card backgrounded">CSS3</div>
+    <div class="skill-card backgrounded">Windows Services</div>
+    <div class="skill-card backgrounded">IIS</div>
 </div>
-This was my very first work experience. Just recently finished my Informatics Degree, I was lookng for a little company, to learn the basics of a business and where I could develop some applications that could be used by someone. Then I joined to [Infogestión SLU](https://www.infogestionslu.com/)
-
-In this company I worked as **Full Stack Software Engineer** learning all the software product lyfe-cycle. As a [SAGE's](https://www.sage.com/) partner I mainly development of some SAGE 50 plugins adjusting to the needs of our costumers. 
+At [InfoGestión SLU](https://www.infogestionslu.com/), I started my career as a **Full Stack Software Engineer**. I primarily worked on **SAGE 50** plugins to meet specific client needs, providing me with a full understanding of the **software product life-cycle**.  
 **Used technology: C# .NET Framework, SQL**
 
-Secondly I designed and implemented another .NET desktop applications related to that ERP where I could practice with multithreading, window services and SQL queries optimizations.In both tasks I learned to lead with costumers trying to traduce their needs to software requirements.   
+In addition, I developed .NET desktop applications related to ERP systems, where I worked on **multithreading**, **Windows services**, and **SQL query optimizations**. I also contributed to client interactions, translating their needs into software requirements.  
 **Used technology: C# .NET Framework, Windows Services, SQL**
 
-In the background I helped to maintain an own product, a CMMS (Computerized Maintenance Management Sofware) called [Nadilux](https://www.nadilux.com/) written in ASP/NET. I could work with customer information terminals and bluetooth printers.  
-**Used technology: ASP/NET, JS, CSS3, HTML5, IIS, SQL**
+Furthermore, I assisted in maintaining **Nadilux**, a **CMMS** system written in **ASP.NET**, and worked on terminals connected to **Bluetooth printers** and customer information systems.  
+**Used technology: ASP.NET, JavaScript, CSS3, HTML5, IIS, SQL**
+
 ## Remarkable projects and use cases
 <div class="posts">
     {% for post in site.categories['Infogestión'] %}
         {% include post-card.html %}
     {% endfor %}
 </div>
+

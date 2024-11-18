@@ -4,13 +4,11 @@ title: Hard Skills
 description: Met here all technical skills
 ---
 # Soft skills
-In this page you can see my soft-skills punctuated using this portfolio content based on elements defined among pages contained in [projects](/projects) sections
+In this page, you can find the soft skills that most effectively reflect my character and professional approach. These qualities are essential for any successful workplace. On the [projects page](/projects), you can explore detailed use cases that demonstrate how I apply these skills to real-world challenges, showcasing my ability to deliver results and thrive in diverse environments.
 
+<div class="skills">
 {% for tag in site.tags %}
-{% assign skill = tag[0]%}
-{% assign val = site.posts | size %}
-{% assign punct = tag[1].size %}
-{% assign punct = val | divided_by: punct | times: 10 %}
-{% assign punct = 100 | minus: punct %}
-{% include skill-bar.html %}
+{% assign s = tag[0]%}
+{% include skill-bubble.html %}
 {% endfor %}
+</div>

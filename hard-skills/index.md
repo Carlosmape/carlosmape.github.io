@@ -4,7 +4,7 @@ title: Hard Skills
 description: Met here all technical skills
 ---
 # Technical skills
-In this page you can see my hard-skills punctuated using this portfolio content based on elements defined among pages contained in [projects](/projects) sections
+This page showcases my hard skills, punctuated based on the projects I’ve worked on. The content displayed reflects my expertise in various technologies, operating systems, databases, languages, and IDEs. The progress bars are computed using the data collected from the **[projects](/projects)** section, giving a visual representation of my proficiency in each skill category.
 
 {% for d in site.data %}
 {% assign group = d[0]%}

@@ -1,28 +1,16 @@
 ---
 layout: default
-title: Soft skills
-description: No description provided
+title: Hard Skills
+description: Met here all technical skills
 ---
+# Soft skills
+In this page you can see my soft-skills punctuated using this portfolio content based on elements defined among pages contained in [projects](/projects) sections
 
-In this section I cover my remarkable soft-skills with some use cases
-
-# Team Work
-<div class="posts">
-    {% for usecase in site.tags['Team work'] %}
-        {% include post-card.html %}
-    {% endfor %}
-</div>
-
-# Proactivity
-<div class="posts">
-    {% for usecase in site.tags['Proactivity'] %}
-        {% include post-card.html %}
-    {% endfor %}
-</div>
-
-# Continuous Learning
-<div class="posts">
-    {% for usecase in site.tags['Continuous learning'] %}
-        {% include post-card.html %}
-    {% endfor %}
-</div>
+{% for tag in site.tags %}
+{% assign skill = tag[0]%}
+{% assign val = site.posts | size %}
+{% assign punct = tag[1].size %}
+{% assign punct = val | divided_by: punct | times: 10 %}
+{% assign punct = 100 | minus: punct %}
+{% include skill-bar.html %}
+{% endfor %}

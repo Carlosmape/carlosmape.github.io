@@ -14,7 +14,7 @@ In this page you can see my hard-skills punctuated using this portfolio content 
 ## {{ group | capitalize }}
 {% for skill in skills %}
 {% assign punct = site.posts | where: group, skill | size %}
-{% assign punct =  val | divided_by: punct | times: 10 %}
+{% assign punct = val | divided_by: punct | times: 10 %}
 {% assign punct = 100 | minus: punct %}
 {% include skill-bar.html %}
 {% endfor %}
